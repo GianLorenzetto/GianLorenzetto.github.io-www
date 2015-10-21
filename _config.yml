@@ -1,0 +1,12 @@
+title:        Zen Dibbler
+tagline:      'Blog posts on stuff'
+description:  "Writing things down so I don't have to remember."
+url:          http://localhost:4000
+version:      1.0.0
+author:
+  name:       'Gian Lorenzetto'
+  email:      'gian.lorenzetto@gmail.com'
+markdown:     rdiscount
+permalink:    pretty
+highligher:   pygments
+paginate:     5
