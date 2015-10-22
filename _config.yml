@@ -7,16 +7,16 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            Zen Dibbler
-tagline:          'My blog spot'
-description:      "My IT and software blog, for writing things down so I don't have to remember."
+title:            Gian Lorenzetto
+tagline:          'My blog and project spot'
+description:      "My blog and projects spot, where I collect useful things relating to software development, mostly so I don't have to remember them."
 url:              http://gianlorenzetto.githug.io
 baseurl:          /
 
 author:
   name:           'Gian Lorenzetto'
   email:          gian.lorenzetto@gmail.com
-  url:            https://twitter.com/mdo
+  url:            https://twitter.com/TheZenDibbler
 
 paginate:         5
 
