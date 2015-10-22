@@ -10,7 +10,7 @@ relative_permalinks: true
 title:            Gian Lorenzetto
 tagline:          'My blog and project spot'
 description:      "My blog and projects spot, where I collect useful things relating to software development, mostly so I don't have to remember them."
-url:              https://gianlorenzetto.githug.io
+url:              https://gianlorenzetto.github.io
 #url:              http://localhost:4000
 baseurl:          /
 
