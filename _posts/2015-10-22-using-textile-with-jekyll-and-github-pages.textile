@@ -14,5 +14,17 @@ a line break, some _emphasis_ and a "link":http://redcloth.org
 * an item
 * and another
 
+The EPA(Environ Protection Agency)
+
+{% highlight ruby %}
+def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json { render json: @widget }
+  end
+end
+{% endhighlight %}
+
 # one
 # two
