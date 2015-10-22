@@ -33,6 +33,9 @@ social:
    url: https://twitter.com/thezendibbler
    class: twitter
 
+# Excerpt separator
+excerpt_separator: <!--more-->
+
 # Custom vars
 version:          2.1.0
 
