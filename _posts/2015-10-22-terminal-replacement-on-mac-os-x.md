@@ -14,4 +14,4 @@ I also stumbled across [Oh My Zsh](), which I originally thought I was going to 
 
 Here's a quick screen capture, showing my sites repo, with an untracked file, a modified file and an added file. I'm also two commits ahead of `origin master`.
 
-![Oh My Git in action]({{ site.url }}/images/ss_ohmygit.png) 
+![Oh My Git in action]({{ site.url }}/images/ss_ohmygit.png "Oh My Git in action.") 
