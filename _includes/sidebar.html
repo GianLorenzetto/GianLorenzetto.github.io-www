@@ -31,11 +31,11 @@
 
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
 
-    <div>
+    <div class="sidebar-social">
     {% for social in site.social %}
-      <a class="sidebar-social" href="{{ social.url }}">
+      <div><a href="{{ social.url }}">
         {{ social.title }}
-      </a>
+      </a></div>
     {% endfor %}
     </div>
 
