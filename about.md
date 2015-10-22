@@ -18,7 +18,11 @@ Still in the works ...
 
 * Built on [GitHub Pages](https://pages.github.com), which itself uses [Jekyll](https://jekyllrb.com).
 * Design is based on the [Hyde](https://github.com/poole/hyde) theme.
-* All of the content on this site was coded using the awesome [Sublime Text 3](http://sublimetext.com) ...
+* All of the content on this site was coded using the awesome [Sublime Text 3](http://sublimetext.com), with the following packages -
+  * [MarkdownEditing](https://packagecontrol.io/packages/MarkdownEditing)
+  Nifty markdown support including syntax highlighting and completion
+  * [Jekyll](https://packagecontrol.io/packages/Jekyll)
+  Adds some really nice jekyll support to Sublime,  automating most of the work in creating posts / drafts / pages etc._
 * ... except for the occaisional trip to [StackEdit](https://stackedit.io/editor#), a nice WYSIWYG mardown editor, to resolve formatting issues.
 * To make `terminal` time a littel more awesome I use [iTerm2](https://www.iterm2.com) with [Oh My Git](https://github.com/arialdomartini/oh-my-git) installed.
 
