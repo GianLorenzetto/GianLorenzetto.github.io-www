@@ -3,28 +3,20 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+This is my blog and projects website. It's in pretty alpha state right now, so please forgive any typo's, bad links and bad posts (hopeful only a few of the last one!)
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+### Me
 
-There are currently two themes built on Poole:
+**Gian Lorenzetto** BCM PhD  
+Senior Developer at [Readify](http://www.readify/net)
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+### This Site
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+* Built on [GitHub Pages](https://pages.github.com), which itself uses [Jekyll](https://jekyllrb.com).
+* Design is based on the [Hyde](https://github.com/poole/hyde) theme.
+* All of the content on this site was coded using the awesome [Sublime Text 3](http://sublimetext.com) ...
+* ... except for the occaisional trip to [StackEdit](https://stackedit.io/editor#), a nice WYSIWYG mardown editor, to resolve formatting issues.
 
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/GianLorenzetto/GianLorenzetto.github.io/issues/new).
 
 Thanks for reading!
