@@ -10,6 +10,10 @@ This is my blog and projects website. It's in pretty alpha state right now, so p
 **Gian Lorenzetto** BCM PhD  
 Senior Developer at [Readify](http://www.readify/net)
 
+### Profile
+
+Still in the works ... 
+
 ### This Site
 
 * Built on [GitHub Pages](https://pages.github.com), which itself uses [Jekyll](https://jekyllrb.com).

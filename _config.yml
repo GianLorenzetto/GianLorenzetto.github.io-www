@@ -20,6 +20,18 @@ author:
 
 paginate:         5
 
+# Social
+social:
+ - title: GitHub
+   url: https://github.com/gianlorenzetto
+   class: github
+ - title: LinkedIn
+   url: https://www.linkedin.com/in/gianlorenzetto
+   class: linkedin
+ - title: Twitter
+   url: https://twitter.com/thezendibbler
+   class: twitter
+
 # Custom vars
 version:          2.1.0
 
