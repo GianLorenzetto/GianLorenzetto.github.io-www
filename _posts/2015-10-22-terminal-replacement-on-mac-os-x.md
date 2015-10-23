@@ -3,6 +3,7 @@ layout: post
 title: Terminal replacement on Mac OS X
 categories: [development, tools, mac]
 tags: [terminal]
+date: 2015-10-22 00:00:00
 
 ---
 

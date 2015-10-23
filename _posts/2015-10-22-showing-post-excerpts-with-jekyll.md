@@ -3,6 +3,7 @@ layout: post
 title: Showing post excerpts with Jekyll
 categories: [www]
 tags: [jekyll]
+date: 2015-10-22 00:01:00
 
 ---
 
@@ -44,7 +45,7 @@ It's quite straight-forward -
 
   * the first line
 
-      `{% raw %}{% if post.content contains '<!--more-->' %}{% endraw %}`  
+        {% raw %}{% if post.content contains '<!--more-->' %}{% endraw %}
   
       just checks for the presence of the excerpt separator,
   * if the separator is found, then only the excerpt is shown, along with the `Read More ...` link to the to full post (`post.url`),
