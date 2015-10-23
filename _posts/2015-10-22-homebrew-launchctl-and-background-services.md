@@ -8,6 +8,8 @@ tags: [cntlm, homebrew]
 
 I installed `cntlm` on my MBP for a while as a proxy work-around on a client site and used `launchctl` to have it run the `cntlm` service at startup. Then I finished the gig and I wanted to prevent it from running … err, but I couldn’t find it using `launchctl list` or any other google supplied answer. Until I stumbled over [this blog](https://robots.thoughtbot.com/starting-and-stopping-background-services-with-homebrew).
 
+<!--more-->
+
 ### tl;dr
 
 1. Install brew services.

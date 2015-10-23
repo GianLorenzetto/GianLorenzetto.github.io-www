@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-This is my blog and projects website. It's in pretty alpha state right now, so please forgive any typo's, bad links and bad posts (hopeful only a few of the last one!)
+This is my blog and projects website. It's in a pretty alpha state right now, so please forgive any typo's, bad links and bad posts (hopeful only a few of the last one!)
 
 ### Me
 

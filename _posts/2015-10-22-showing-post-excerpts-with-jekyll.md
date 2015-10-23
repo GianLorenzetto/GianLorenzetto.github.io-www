@@ -9,6 +9,8 @@ date: 2015-10-22 00:01:00
 
 I recently moved my blog to a [GitHub Pages](https://pages.github.com) site and based it on the nice [Hyde theme](https://github.com/poole/hyde) theme. One issue I had was that posts where not being truncated on the main index page. This is fine for shorter posts, but once you have a number of longer posts in the mix, scrolling down to find the next post is a real pain.
 
+<!--more-->
+
 There are a number of ways to do this, but the easiest is with the `post.excerpt` feature in Jekyll. To get this working I did the following:
 
 1. Added `excerpt_separator: <!--more-->` to my `_config.yml`
