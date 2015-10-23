@@ -8,7 +8,7 @@ tags: []
 
 After switching to [GitHub Pages](https://pages.github.com) and [Jekyll](https://jekyllrb.com) for my blog, I ran into a problem wereby posts created on the same day where being ordered alphabetically, not in the order they where created. If you're like me, you don't post several blogs a day, so not really a major issue.
 
-However, as I was moving some old posts across and using Sublime Text (with the Jekyll package) to create the new posts, it was using the current day in the post filenames. Long story short, I had a bunch of posts, all on the same day, no longer ordering corectly.
+However, as I was moving some old posts across and using [Sublime Text](http://www.sublimetext.com) (with the [Jekyll package](https://packagecontrol.io/packages/Jekyll)) to create the new posts, it was using the current day in the post filenames. Long story short, I had a bunch of posts, all on the same day, no longer ordering corectly.
 
 A quick google told me that you can add a `date:` field to the page front matter. For example:
 
