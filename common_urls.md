@@ -3,11 +3,11 @@
 A cheat sheet of common url's I use in my blog posts, formatted for Markdown.
 
 ## Personal
-<div>
+<pre>
 [My GitHub.io](http://gianlorenzetto.github.io)
 [My GitHub](https://github.com/GianLorenzetto)
 [Readify](https://readify.net)
-</div>
+</pre>
 
 # Site Related
 <pre>
@@ -15,7 +15,7 @@ A cheat sheet of common url's I use in my blog posts, formatted for Markdown.
 [Jekyll](https://jekyllrb.com)
 [Liquid](http://liquidmarkup.org)
 [Hyde theme](https://github.com/poole/hyde)
-</dpre>
+</pre>
 
 <div>
 [Markdown](http://daringfireball.net/projects/markdown/)
