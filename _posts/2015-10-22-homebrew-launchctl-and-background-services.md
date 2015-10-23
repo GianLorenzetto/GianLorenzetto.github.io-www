@@ -6,22 +6,23 @@ tags: [cntlm, homebrew]
 
 ---
 
-I installed `cntlm` on my MBP for a while as a proxy work-around on a client site and used `launchctl` to have it run the `cntlm` service at startup. Then I finished the gig and I wanted to prevent it from running … err, but I couldn’t find it using `launchctl list` or any other google supplied answer. Until I stumbled over this blog:
+I installed `cntlm` on my MBP for a while as a proxy work-around on a client site and used `launchctl` to have it run the `cntlm` service at startup. Then I finished the gig and I wanted to prevent it from running … err, but I couldn’t find it using `launchctl list` or any other google supplied answer. Until I stumbled over [this blog](https://robots.thoughtbot.com/starting-and-stopping-background-services-with-homebrew).
 
-https://robots.thoughtbot.com/starting-and-stopping-background-services-with-homebrew
-
-tl;dr
+### tl;dr
 
 1. Install brew services.
 
-`$ brew tap homebrew/services`
+    `$ brew tap homebrew/services`
 
 2. Find the pesky missing service.
 
-`$ brew services list`
+    `$ brew services list`
 
-The output consists of the `Name Status User Plist` and it's the last of these that we're intersted in -
+The output consists of the `Name Status User Plist` and it's the last of these that we're intersted in:
 
->cntlm started root **/Library/../homebrew.mxcl.cntlm.plist**
+<pre>
+Name  Status  User Plist
+cntlm started root <strong>/Library/../homebrew.mxcl.cntlm.plist</strong>
+</pre>
 
-Now you can stop the service and remove the plist file to prevent `cntlm` from running again in the future.
+Now just stop the service and remove the above plist file. That will prevent `cntlm` from running again in the future.
