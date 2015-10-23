@@ -26,6 +26,9 @@ Note that here, unlike the post filename, you can add the time as well! Problem 
 
 ![Sublime Text command palette]({{ site.url }}/images/ss_sublime_jekyll_currentdatetime.png "Sublime Text Command Palette showing Jekyll commands")
 
-<div class="message"><strong>Note</strong> I considered adding the `date` property to the post template, but helod off for a number of reasons:
-1. I normally won;t make more than one post a day, so it's just not a problem in general.
-2. I typically start posts in the `_drafts` folder, then move them across once I'm done. In this case, I really just want to set the `date` to when I'm acutally ready to publish the post. The command in **Note 1** makes that super easy and I'm quite happy with that workflow.</div>
+<div class="message"><strong>Note</strong> I considered adding the <code>date</code> property to the post template, but held off for a number of reasons:
+<ol>
+<li>I normally won't make more than one post a day, so it's just not a problem in general.</li>
+<li>I typically start posts in the <code>_drafts/</code> folder, then move them across once I'm done. In this case, I really just want to set the <code>date</code> when I'm actually ready to publish the post. The command in the first note above makes that super easy and I'm quite happy with that workflow.</li>
+</ol>
+</div>
