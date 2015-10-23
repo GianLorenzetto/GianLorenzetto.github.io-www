@@ -12,8 +12,11 @@ A cheat sheet of common url's I use in my blog posts, formatted for Markdown.
 # Site Related
 <div>
 [GitHub Pages](https://pages.github.com)
+
 [Jekyll](https://jekyllrb.com)
+
 [Liquid](http://liquidmarkup.org)
+
 [Hyde theme](https://github.com/poole/hyde)
 </div>
 
