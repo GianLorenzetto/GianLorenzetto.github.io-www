@@ -7,7 +7,7 @@ date: 2015-10-22 00:01:00
 
 ---
 
-I recently moved my blog to a [GitHub Pages]() site and based it on the nice [Hyde]() theme. One issue I had was that posts where not being truncated on the main index page. This is fine for shorter posts, but once you have a number of longer posts in the mix, scrolling down to find the next post is a real pain.
+I recently moved my blog to a [GitHub Pages](https://pages.github.com) site and based it on the nice [Hyde theme](https://github.com/poole/hyde) theme. One issue I had was that posts where not being truncated on the main index page. This is fine for shorter posts, but once you have a number of longer posts in the mix, scrolling down to find the next post is a real pain.
 
 There are a number of ways to do this, but the easiest is with the `post.excerpt` feature in Jekyll. To get this working I did the following:
 
@@ -32,7 +32,7 @@ Here's the complete code to optionally truncate on the `<!-- more -->` separator
 
 ``` 
 {% raw %}
-{% if post.content contains '<!--more-->' %}
+{% if post.content contains site.excerpt_separator %}
     {{ post.excerpt }}
     <a href="{{ post.url }}"><strong>Read More ...</strong></a>
 {% else %}
@@ -41,14 +41,14 @@ Here's the complete code to optionally truncate on the `<!-- more -->` separator
 {% endraw %}
 ``` 
 
-It's quite straight-forward -
+It's quite straight-forward.
 
-  * the first line
+- The first line
 
-        {% raw %}{% if post.content contains '<!--more-->' %}{% endraw %}
-  
-      just checks for the presence of the excerpt separator,
-  * if the separator is found, then only the excerpt is shown, along with the `Read More ...` link to the to full post (`post.url`),
-  * if the separator is not found, then the full post content is displayed.
+        {% raw %}{% if post.content contains site.excerpt_separator %}{% endraw %}
+
+    just checks for the presence of the excerpt separator,
+- if the separator is found, then only the excerpt is shown, along with the `Read More ...` link to the to full post (`post.url`),
+- if the separator is not found, then the full post content is displayed.
 
 And that's it!
