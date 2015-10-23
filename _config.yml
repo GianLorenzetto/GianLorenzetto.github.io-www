@@ -33,6 +33,14 @@ social:
    url: https://twitter.com/thezendibbler
    class: twitter
 
+# Comments
+#  - Currently only supports Disqus
+#  - To disable comments globally, set 'comments' to false.
+#  - To disable comments for an individual port, set 'comments' to false in the
+#    post front matter.
+comments: true
+disqus_shortname: giansblog
+
 # Excerpt separator
 excerpt_separator: <!--more-->
 
