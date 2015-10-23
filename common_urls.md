@@ -10,15 +10,12 @@ A cheat sheet of common url's I use in my blog posts, formatted for Markdown.
 </div>
 
 # Site Related
-<div>
+<pre>
 [GitHub Pages](https://pages.github.com)
-
 [Jekyll](https://jekyllrb.com)
-
 [Liquid](http://liquidmarkup.org)
-
 [Hyde theme](https://github.com/poole/hyde)
-</div>
+</dpre>
 
 <div>
 [Markdown](http://daringfireball.net/projects/markdown/)
