@@ -12,7 +12,7 @@ title: Projects
 <a name="this-site"></a>
 ### This Site
 
-This site is built on [GitHub Pages](https://pages.github.com) and can be viewed or forked [here](https://github.com/GianLorenzetto/GianLorenzetto.github.io)).
+This site is built on [GitHub Pages](https://pages.github.com) and can be viewed or forked [here](https://github.com/GianLorenzetto/GianLorenzetto.github.io).
 
 Please let me know if you're interested in the modifications from the base [Hyde theme](https://github.com/poole/hyde).
 
