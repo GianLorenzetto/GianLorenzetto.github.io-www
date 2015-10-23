@@ -6,20 +6,20 @@ tags: []
 date: 2015-10-23 15:38:09
 ---
 
-Having spent a few days with [GitHub Pages](https://pages.github.com), I thought I post some learnings in the hope they might help someome else moving to GitHub for blogging. I had a few hiccups at the start, but overall I'm really happy with how it's turned out.
+Having spent a few days with [GitHub Pages](https://pages.github.com), I thought I would post some learnings in the hope they might help someome else moving to GitHub for blogging. I had a few hiccups at the start, but overall I'm really happy with how it's turned out.
 
-Learnings -
-* [Jekyll](https://jekyllrb.com) is pretty cool
-  * has some really nice themes
-  * not a lot of config, but that keeps it simple
-  * [Liquid](http://liquidmarkup.org) is pretty straight-forward and it's easy to work with posts / draft etc
-  * [Markdown](http://daringfireball.net/projects/markdown/) or Textile (actually uses [RedCloth](http://redcloth.org/hobix.com/textile/) for editing
-  * Drop HTML straight into your Mardown for more advanced editing
-  * Syntax hightlighting, with either [Liquid](http://liquidmarkup.org) or [GFM](https://help.github.com/articles/github-flavored-markdown/)
-* Check the Jekyll documention - it's good and has lots of little tips to make life easier
+### Learnings
 
-A couple of other things I discovered-
-* I don't like [Jekyll Boostrap](http://jekyllbootstrap.com) - I actually managed to start with this and nearly gave up on the whole [GitHub Pages](https://pages.github.com) adventure. Needless to say I had a lot of problems. Also appears that the project is dead.
+- [Jekyll](https://jekyllrb.com) is pretty cool.
+  - has some really nice themes.
+  - not a lot of config, but that keeps it simple.
+  - [Liquid](http://liquidmarkup.org) is pretty straight-forward and it's easy to work with posts / draft etc.
+  - [Markdown](http://daringfireball.net/projects/markdown/) or Textile (actually uses [RedCloth](http://redcloth.org/hobix.com/textile/) for editing.
+  - Drop HTML straight into your Mardown for more advanced editing.
+  - Syntax hightlighting, with either [Liquid](http://liquidmarkup.org) or [GFM](https://help.github.com/articles/github-flavored-markdown/).
+- Check the Jekyll documention - it's good and has lots of little tips to make life easier.
+
+One other thing: I don't like [Jekyll Boostrap](http://jekyllbootstrap.com) - I actually managed to start with this and nearly gave up on the whole [GitHub Pages](https://pages.github.com) adventure. Needless to say I had a lot of problems. Also appears that the project is dead.
 
 # My workflow
 
