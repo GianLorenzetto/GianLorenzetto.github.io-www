@@ -177,7 +177,16 @@ a.sidebar-nav-item:focus {
   }
 }
 
+/*
+ * Post Archive
+ */
+.posts-archive p {
+  margin-bottom: 0;
+}
 
+.posts-archive-date {
+  color: #999;
+}
 
 /*
  * Themes
