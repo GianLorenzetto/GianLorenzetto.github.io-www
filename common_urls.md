@@ -17,17 +17,18 @@ A cheat sheet of common url's I use in my blog posts, formatted for Markdown.
 [Hyde theme](https://github.com/poole/hyde)
 </pre>
 
-<div>
+# Formatting
+
+<pre>
 [Markdown](http://daringfireball.net/projects/markdown/)
 [GFM](https://help.github.com/articles/github-flavored-markdown/)
-</div>
-
-<div>
 [RedCloth](http://redcloth.org/hobix.com/textile/)
-</div>
+</pre>
 
-<div>
+# Sublime Text
+
+<pre>
 [Sublime Text](http://www.sublimetext.com)
 [Jekyll package](https://packagecontrol.io/packages/Jekyll)
 [MarkdownEditing Package](https://github.com/SublimeText-Markdown/MarkdownEditing)
-</div>
+</pre>
