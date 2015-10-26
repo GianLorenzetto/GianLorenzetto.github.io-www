@@ -6,7 +6,7 @@ tags: []
 
 ---
 
-Recently, Mohamed Zaatar (a fellow Readifarian) and I spent some time creating a complete build and deployment pipeline. Our main goal was to create a fully functional CI server in Azure, with [TeamCity](TeamCity) for builds and [OctopusDeploy](https://octopus.com/) for deployments.
+Recently, Mohamed Zaatar (a fellow Readifarian) and I spent some time creating a complete build and deployment pipeline. Our main goal was to create a fully functional [CI](https://www.thoughtworks.com/continuous-integration) server in Azure, with [TeamCity](https://www.jetbrains.com/teamcity/) for builds and [OctopusDeploy](https://octopus.com/) for deployments.
 
 <!--more-->
 
@@ -17,11 +17,19 @@ Secondly, during my career as a software developer one of the things I've notice
 * builds are not repeatable,
 * merging long lived feature branches becomes a nightmare,
 * creating a release is often a manual and error prone exercise, and
-* deployment out to production is a cross-your-fingers, rollercoaster ride of disappointment.
+* deployment out to production is a cross-your-fingers, roller-coaster ride of disappointment.
 
-This post will predominantly be about the key learnings we had while setting up the environment, while linking to some more detailed information. Note also that practically all of the steps below can be fully automated with PowerShell, but that's out of scope for this post.
+This post includes:
 
-## TL;DR
+* the key learnings we had while setting up the environment, and
+* links to some more detailed information we found useful.
+
+This post won't include:
+
+* detailed step-by-step instructions on setting up Azure, TeamCity and OctopusDeploy (there are plenty of those, see below), or
+* automation with PowerShell (that's for another post!).
+
+## tl;dr
 
 The executive level summary is to go read [this post by Andy French](http://www.andyfrench.info/2015/05/how-to-setup-teamcity-build-server-with.html). It's what we used as a guide and it provides great step-by-step instructions for getting a build server up and running (including Azure VM and TeamCity).
 
@@ -33,19 +41,21 @@ Of course, there were a number of little (and not so little) issues we encounter
 
 Creating a VM on Azure is remarkably simple. The basic order of things is to:
 
-1. Create a Virtual Network.
-2. Create a Storage Account.
-3. Create a SQL Server DB.
-4. Create a Cloud Service.
-5. Create a Virtual Machine.
+1. [Create a Virtual Network](#step1)
+2. [Create a Storage Account](#step2-3)
+3. [Create a SQL Server DB](#step2-3)
+4. [Create a Cloud Service](#step4)
+5. [Create a Virtual Machine](#step5)
 
+<a name="step1"></a>
 ### Step 1 - Virtual Network
 
-Step 1 was overkill for us and so we skipped it. But essentially, if you would like to setup a multi-machine enviroment, go for it. For us the stand-alone VM option was fine.
+For our needs, setting up a _Virtual Network_ was overkill, thus we skipped this step. However, if you would like to setup a multi-machine environment on the one sub-net in Azure, then you will need to do this. For us the stand-alone VM option was perfectly suitable.
 
-### Step 2,3 - Storage
+<a name="step2-3"></a>
+### Step 2,3 - Storage and Database
 
-Steps 1, 2 are optional. A Storage Account will be automatically created for you when you create the VM if you don't already have one defined.
+Steps 2 and 3 are optional. A _Storage Account_ will be automatically created for you when you create the VM if you don't already have one defined.
 
 As we're using TeamCity, we chose to create a SQL Server DB. TeamCity has it's own, built-in database (HSQLDB), which you could use as a trial, but it's not for anything else. From the [TeamCity documentation](https://confluence.jetbrains.com/display/TCD8/Setting+up+an+External+Database):
 
@@ -62,17 +72,23 @@ And here's a screen capture of that setting in the classic portal:
 
 ![SQL Server collation setting]({{ site.url }}/images/ss_sqldb_collation_type.png "SQL Server collation setting")
 
+And here's what the setting looks like in the preview portal:
+
+![SQL Server collation setting]({{ site.url }}/images/ss_sqldb_collation_type_previewportal.png "SQL Server collation setting")
+
 <div class="message">
-<strong>Note</strong> We've created a SQL Server database here for TeamCity, but it can use most of the popular databases. Going the SQL route was simplest in this instance, however jump into the TeamCity docs to get a MySql or Postgresql installation rocking if that suits your needs.
+<strong>Note</strong> We've created a SQL Server database here for TeamCity, but it can use most of the popular databases. Going the SQL Server route was simplest in this instance, however <a href="https://confluence.jetbrains.com/display/TCD9/Setting+up+an+External+Database">jump into the TeamCity docs</a> to get a <a href="https://www.mysql.com">MySql</a> or <a href="http://www.postgresql.org">PostgreSQL</a> installation rocking if that suits your needs.
 </div>
 
+<a name="step4"></a>
 ### Step 4 - Cloud Service
 
-A Cloud Service is a container for one or more virtual machines, giving you the ability to load balance your service. Again, this was too complex for our needs and a Cloud Service will be automatically created for you. 
+A Cloud Service is a container for one or more virtual machines, giving you the ability to load balance your service. Again, this was too complex for our needs and if you don't specify one, a Cloud Service will be automatically created for you. 
 
 Note that Azure will automatically name the cloud service with the same name as the VM, which means they will have the same DNS name (eg, the service and the VM will both be at `myvm.cloudapp.net`). There were some articles on SO that indicated this may be a problem, but we never had an issue (except for when I forget to set the firewall up correctly on the VM, but that's another story ...). In more complex, multi-VM environments this may be something to consider.
 
-### Step 5 - Virtual Machine
+<a name="step5"></a>
+### Step 5 - Creating the Virtual Machine
 
 When creating a VM, you really just need to select:
 
@@ -81,7 +97,19 @@ When creating a VM, you really just need to select:
 * the tier and size, and
 * the region.
 
-If you're going for a build server, as we were, when selecting the image name be sure to pick one _with VisualStudio installed_ ... perhaps too much coffee that day. In the end I had success with both Windows Server 2012 and Windows 10 VM's.
+If you're going for a build server, as we were, when selecting the image name be sure to pick one _with VisualStudio installed_ ... perhaps too much coffee that day. In the end I had success with both `Windows Server 2012` and `Windows 10` VM's.
+
+The easiest way to do this is to go to the Azure Marketplace:
+
+![Selecting an image]({{ site.url }}/images/ss_azure_imagemarketplace.png "Selecting an image with Visual Studio installed")
+
+Then just enter '_Visual Studio_' in the filter at the top of the page. Note that you may only see entries for Visual Studio _2013_ in the drop-down:
+
+![Azure Marketplace]({{ site.url }}/images/ss_azure_imagemarketplace_vs2013only.png "Azure Marketplace for selecting an image")
+
+Just hit `Enter` in filter box and wait for the full list to display. From there just pick the edition and release that suits your needs:
+
+![Selecting a VM image]({{ site.url }}/images/ss_azure_imagemarketplace_vsfulllisting.png "Selecting and image name including Visual Studio")
 
 <div class="message">
 <strong>Desktop Image or Server?</strong> Good question. My general thoughts here were that if you're application is designed to run on a desktop OS, then build/deploy on a desktop OS. However, Microsoft's licensing may have something to say about that. I imagine you're mileage will vary with this one, but there are a large number of pre-defined images to choose from, all pre-installed with VisualStudio and/or the build tools.
@@ -114,8 +142,8 @@ Lastly, be sure to update the _Endpoints_ configuration to add any port exceptio
 
 A few other miscellaneous things we learnt, in no particular order:
 
-* I started off using the new portal, then switched back to the classic view. In general, I found the new portal a little more error prone than the classic view. It also didn't flow as nicely on my 13" MBP, but it might be a more pleasurable experience on a larger monitor.
-* Be careful with your usernames and passwords. I got all 'secure' early on and created different named accounts with random passwords for just about everything and it was a bit of a nightmare to manage. Be secure. Just be a little pragmatic and don't go nuts.
+* I started off using the new portal, then switched back to the classic view. In general, I found the new portal a little less friendly than the classic view. It also didn't flow as nicely on my 13" MBP, but it might be a more pleasurable experience on a larger monitor.
+* Be careful with your _usernames_ and _passwords_. I got all 'secure' early on and created different named accounts with random passwords for just about everything and it was a bit of a nightmare to manage. Be secure. Just be a little pragmatic and don't go nuts.
 * Save. Don't forget to save in the Azure management portal. What was that? Oh, did you forget to save? Save. Save. Save.
 
 ## Conclusion
