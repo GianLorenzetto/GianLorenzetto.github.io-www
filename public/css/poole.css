@@ -274,12 +274,17 @@ tbody tr:nth-child(odd) th {
 
 .message {
   margin-bottom: 1rem;
+  margin-left: 0rem;
   padding: 1rem;
   color: #717171;
   background-color: #FFFACD;
   border: 2px dotted gray;
 }
-
+@media (min-width: 48em) {
+  .message {
+    margin-left: -2rem;
+  }
+}
 
 /*
  * Container
