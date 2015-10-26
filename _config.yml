@@ -8,7 +8,7 @@ relative_permalinks: true
 
 # Setup
 title:            Gian Lorenzetto
-tagline:          "The art and science of software"
+tagline:          "The Art and Science of Software"
 description:      "The art and science of software development."
 url:              https://gianlorenzetto.github.io
 baseurl:          /
