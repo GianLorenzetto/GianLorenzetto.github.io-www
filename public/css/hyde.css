@@ -41,7 +41,7 @@ html {
 }
 @media (min-width: 58em) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -79,8 +79,13 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
+  /*font-family: "Abril Fatface", serif;*/
+  font-family: "Courier New", Courier, monospace;
   font-size: 2.25rem;
+}
+
+.lead {
+  font-family: "Courier New", Courier, monospace;
 }
 
 /* Sidebar nav */

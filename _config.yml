@@ -8,10 +8,9 @@ relative_permalinks: true
 
 # Setup
 title:            Gian Lorenzetto
-tagline:          "Gian's Blog"
-description:      "All things relating to the art and science of software development."
+tagline:          "The art and science of software"
+description:      "The art and science of software development."
 url:              https://gianlorenzetto.github.io
-#url:              http://localhost:4000
 baseurl:          /
 
 author:
