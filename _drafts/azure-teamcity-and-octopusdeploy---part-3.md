@@ -6,13 +6,13 @@ tags: []
 
 ---
 
-This is Part 3 of Mohamed and Gian's adventures in setting up a CI and deployment pipeline. [Part 1 XXX]() covered creating a VM in Azure and [Part 2 XXX]() discussed installing TeamCity. Go do them and then come back ... done? Then let's more on!
+This is Part 3 of Mohamed (https://twitter.com/mzaatar) and Gian's adventures in setting up a CI and deployment pipeline. [Part 1 XXX](TODO) covered creating a VM in Azure and [Part 2 XXX](TODO) discussed installing TeamCity. Go do them and then come back ... done? Then let's more on!
 
 [OctopusDeploy](http://octopus.com) does one thing, but it does it really, really well: deployments (surprise!).
 
 It's almost trivial to install and configure, but there where a few little things I didn't know when we started this:
 
-1. OctopusDeploy needs [NuGet](https://www.nuget.org) packages - everything you deploy will need to be a NuGet package. If you're not familiar with NuGet packaging you'll want to pay attention to the OctoPack section below.
+1. OctopusDeploy needs [NuGet](https://www.nuget.org) packages - everything you deploy will need to be NuGet-packaged. If you're not familiar with NuGet packaging you'll want to pay attention to the OctoPack section below.
 2. OctopusDeploy uses the concept of a central server and deployment targets, called _tentacles_.
 
 The rest of this post is organised as follows:
@@ -28,7 +28,7 @@ The rest of this post is organised as follows:
 
 A couple of things to note:
 
-* If you're using a non-standard port (say 8080) remember to open the port on the firewall of the server, as well as the endpoint configuration in the Azure management portal.
+* If you're using a non-standard port (say 8080) remember to open the port on the firewall of the server, as well as the endpoint configuration in Azure management portal.
 * Offline package drop creates the deployment, ready to be executed ... do NOT expect things like configuration variables to be substituted before running the deployment script.
 
 <a name="installing-tentacles"></a>
@@ -56,4 +56,4 @@ There are alos more complex transformations available, useful for defining a com
 <a name="octopack"></a>
 ### Packaging with OctoPack
 
-OctopusDeploy requires a NuGet package to deploy. For that, we used OctoPack. OctoPack is a nifty little NuGet package that you can install into any deployable project (exe, lib, website). Once installed it automatically modifies the MSBuild script to create a NuGet package. Don't have a nuspec file? Doesn't matter, OctoPack creates one for you and does a good job of guessing what files are required based on the type of project (just make sure you at least review file for a real project!)
+OctopusDeploy requires a NuGet package to deploy. For that, we used OctoPack. OctoPack is a nifty little NuGet package that you can install into any deployable project (exe, lib, website). Once installed it automatically modifies the MSBuild script to create a NuGet package. Don't have a nuspec file ( what is nsupec file - needs clarification) ? Doesn't matter, OctoPack creates one for you and does a good job of guessing what files are required based on the type of project (just make sure you at least review file for a real project!)
