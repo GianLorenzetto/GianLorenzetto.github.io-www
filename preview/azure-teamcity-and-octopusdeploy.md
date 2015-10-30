@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Azure, TeamCity and OctopusDeploy - Part 1
-categories: []
-tags: [Azure,TC,TeamCity,OD,OctopusDeploy,Readify]
+categories: [Technical,Readify,OD,Azure,TC,CI]
+tags: [Azure,TC,TeamCity,OD,OctopusDeploy,Readify,Gian,CI,Zaatar,microsoft]
 date: 2015-10-26 11:29:45
 ---
 
-Recently, Mohamed Zaatar (a fellow Readifarian - (https://twitter.com/mzaatar) ) and I spent some time creating a complete build and deployment pipeline. Our main goal was to create a fully functional [CI](https://www.thoughtworks.com/continuous-integration) server in Azure, with [TeamCity](https://www.jetbrains.com/teamcity/) for builds and [OctopusDeploy](https://octopus.com/) for deployments.
+Recently, [Mohamed](https://twitter.com/mzaatar) (a fellow Readifarian) and I spent some time creating a complete build and deployment pipeline. Our main goal was to create a fully functional [CI](https://www.thoughtworks.com/continuous-integration) server in Azure, with [TeamCity](https://www.jetbrains.com/teamcity/) for builds and [OctopusDeploy](https://octopus.com/) for deployments.
 
 <!--more-->
 
@@ -83,7 +83,7 @@ And here's what the setting looks like in the preview portal:
 <a name="step4"></a>
 ### Step 4 - Cloud Service
 
-A Cloud Service is a (Azure porcessing unit) container for one or more virtual machines, giving you the ability to load balance your service. Again, this was too complex for our needs and if you don't specify one, a Cloud Service will be automatically created for you. 
+A Cloud Service is a (Azure processing unit) container for one or more virtual machines, giving you the ability to load balance your service. Again, this was too complex for our needs and if you don't specify one, a Cloud Service will be automatically created for you. 
 
 Note that Azure will automatically name the cloud service with the same name as the VM, which means they will have the same DNS name (eg, the service and the VM will both be at `myvm.cloudapp.net`). There were some articles on SO that indicated this may be a problem, but we never had an issue (except for when I forget to set the firewall up correctly for ports on the VM, but that's another story ...). In more complex, multi-VM environments this may be something to consider.
 
@@ -142,7 +142,7 @@ Lastly, be sure to update the _Endpoints_ configuration to add any port exceptio
 
 A few other miscellaneous things we learnt, in no particular order:
 
-* I started off using the new portal (https://portal.azure.com), then switched back to the classic view (https://manage.windowsazure.com). In general, I found the new portal a little less friendly than the classic view. It also didn't flow as nicely on my 13" MBP, but it might be a more pleasurable experience on a larger monitor.
+* At starting, the new portal (https://portal.azure.com) is used then switched back to the classic view (https://manage.windowsazure.com). In general, I found the new portal a little less friendly than the classic view. It also didn't flow as nicely on my 13" MBP, but it might be a more pleasurable experience on a larger monitor.
 * Be careful with your _usernames_ and _passwords_. I got all 'secure' early on and created different named accounts with random passwords for just about everything and it was a bit of a nightmare to manage. Be secure. Just be a little pragmatic and don't go nuts.
 * Save. Don't forget to save in the Azure management portal. What was that? Oh, did you forget to save? Save. Save. Save.
 

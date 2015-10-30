@@ -6,7 +6,7 @@ tags: []
 
 ---
 
-This is Part 3 of Mohamed (https://twitter.com/mzaatar) and Gian's adventures in setting up a CI and deployment pipeline. [Part 1 XXX](TODO) covered creating a VM in Azure and [Part 2 XXX](TODO) discussed installing TeamCity. Go do them and then come back ... done? Then let's more on!
+This is Part 3 of [Mohamed](https://twitter.com/mzaatar) and Gian's adventures in setting up a CI and deployment pipeline. [Part 1 XXX](TODO) covered creating a VM in Azure and [Part 2 XXX](TODO) discussed installing TeamCity. Go do them and then come back ... done? Then let's more on!
 
 [OctopusDeploy](http://octopus.com) does one thing, but it does it really, really well: deployments (surprise!).
 

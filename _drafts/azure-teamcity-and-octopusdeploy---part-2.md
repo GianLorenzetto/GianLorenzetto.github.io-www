@@ -6,7 +6,7 @@ tags: []
 
 ---
 
-This is Part 2 of Mohamed (https://twitter.com/mzaatar) and Gian's adventures in creating a complete CI and deployment pipeline. If you missed it, [Part 1 XXXX](TODO) was all about setting up a suitable VM in Azure. If you haven't already done so, what are you waiting for!
+This is Part 2 of [Mohamed](https://twitter.com/mzaatar) and Gian's adventures in creating a complete CI and deployment pipeline. If you missed it, [Part 1 XXXX](TODO) was all about setting up a suitable VM in Azure. If you haven't already done so, what are you waiting for!
 
 In this post, I'll cover how we installed and configured TeamCity.
 
