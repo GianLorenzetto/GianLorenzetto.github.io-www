@@ -77,15 +77,23 @@ And here's what the setting looks like in the preview portal:
 ![SQL Server collation setting]({{ site.url }}/images/ss_sqldb_collation_type_previewportal.png "SQL Server collation setting")
 
 <div class="message">
-<strong>Note</strong> We've created a SQL Server database here for TeamCity, but it can use most of the popular databases. Going the SQL Server route was simplest in this instance, however <a href="https://confluence.jetbrains.com/display/TCD9/Setting+up+an+External+Database">jump into the TeamCity docs</a> to get a <a href="https://www.mysql.com">MySql</a> or <a href="http://www.postgresql.org">PostgreSQL</a> installation rocking if that suits your needs.
+<strong>Note</strong> We created a SQL Server database for TeamCity, but it can use most of the popular databases. Going the SQL Server route was simplest in this instance, however <a href="https://confluence.jetbrains.com/display/TCD9/Setting+up+an+External+Database">jump into the TeamCity docs</a> to get a <a href="https://www.mysql.com">MySql</a> or <a href="http://www.postgresql.org">PostgreSQL</a> installation rocking if that suits your needs.
 </div>
 
 <a name="step4"></a>
 ### Step 4 - Cloud Service
 
-A Cloud Service is a (Azure processing unit) container for one or more virtual machines, giving you the ability to load balance your service. Again, this was too complex for our needs and if you don't specify one, a Cloud Service will be automatically created for you. 
+A [Cloud Service](https://azure.microsoft.com/en-us/documentation/articles/cloud-services-choose-me/) is a (Azure processing unit) container for one or more virtual machines, giving you the ability to load balance your service. The image below is from the linked Cloud Services article above and gives a brief description of the different hosting models for you application:
 
-Note that Azure will automatically name the cloud service with the same name as the VM, which means they will have the same DNS name (eg, the service and the VM will both be at `myvm.cloudapp.net`). There were some articles on SO that indicated this may be a problem, but we never had an issue (except for when I forget to set the firewall up correctly for ports on the VM, but that's another story ...). In more complex, multi-VM environments this may be something to consider.
+![Azure Hosting Models]({{ site.url }}/images/ss_azure_hostingmodelstable.png "The three different hosting models in Azure")
+
+In this instance, we wanted to create our own VM, but we did not need the added features (and complexity) of the Cloud Services model. Azure makes this easy, as when you create the VM you can either:
+- select an existing Cloud Service, or
+- one will be automatically created for you.
+
+We took the latter option.
+
+Also note that Azure will automatically name the Cloud Service with the same name as the VM, which means they will have the same DNS name (eg, the service and the VM will both be at `myvm.cloudapp.net`). There were some articles on SO that indicated this may be a problem, but we never had an issue (except for when I forget to open the appropriate ports on the VM's local firewall, but that's another story ...). In more complex, multi-VM environments this may be something to consider.
 
 <a name="step5"></a>
 ### Step 5 - Creating the Virtual Machine
@@ -97,7 +105,7 @@ When creating a VM, you really just need to select:
 * the tier and size, and
 * the region.
 
-If you're going for a build server, as we were, when selecting the image name be sure to pick one _with VisualStudio installed_ ... perhaps too much coffee that day. In the end I had success with both `Windows Server 2012` and `Windows 10` VM's.
+If you're going for a build server, as we were, when selecting the image name be sure to pick one _with VisualStudio installed_ ... perhaps too much coffee that day. In the end we had success with both `Windows Server 2012` and `Windows 10` VM's.
 
 The easiest way to do this is to go to the Azure Marketplace:
 
@@ -142,7 +150,7 @@ Lastly, be sure to update the _Endpoints_ configuration to add any port exceptio
 
 A few other miscellaneous things we learnt, in no particular order:
 
-* At starting, the new portal (https://portal.azure.com) is used then switched back to the classic view (https://manage.windowsazure.com). In general, I found the new portal a little less friendly than the classic view. It also didn't flow as nicely on my 13" MBP, but it might be a more pleasurable experience on a larger monitor.
+* We both started with the the new management portal (https://portal.azure.com), but switched back to the classic view (https://manage.windowsazure.com). In general, I found the new portal a little less friendly than the classic view. It also didn't flow as nicely on my 13" MBP, but it might be a more pleasurable experience on a larger monitor.
 * Be careful with your _usernames_ and _passwords_. I got all 'secure' early on and created different named accounts with random passwords for just about everything and it was a bit of a nightmare to manage. Be secure. Just be a little pragmatic and don't go nuts.
 * Save. Don't forget to save in the Azure management portal. What was that? Oh, did you forget to save? Save. Save. Save.
 
