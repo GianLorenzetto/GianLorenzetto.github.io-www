@@ -3,7 +3,7 @@ layout: post
 title: Working in a Difficult Environment
 categories: [development,people]
 tags: []
-date: 2015-10-26 16:03:25
+date: 2015-10-30 23:07:20
 ---
 
 ## Toxic Environments
@@ -51,9 +51,9 @@ Toxic environments are rarely what they initially seem and you need to really un
 
 Be open, honest and transparent at all times. Toxic environments generally have poor communication channels and words can be easily twisted. Make sure you are clear in your intentions and be specific in what you are doing and what you are trying to achieve. Keep a journal. This is just a good idea in general, but it can really help at the end of a bad day to dump all the negative crap onto a page, forget it and go home. 
 
-This can be a really good opportunity to show some leadership skills by doing _the right thing_. I've been in numerous places where it's really hard to do the right thing, as after the 3rd time getting shot down by the PO in a meeting, you just give up and go with the flow. Set the example by doing the right thing even if it feels like a complete waste of time.
+This can be a really good opportunity to show some leadership skills by doing _the right thing_. I've been in numerous places where it's really hard to do the right thing, as after the 3rd time getting shot down by the PO in a meeting, you just give up and go with the flow. Set the example by doing the right thing even if it feels like a complete waste of time ...
 
-_But_ ... others see you doing the right thing - builds trust, making people feel safe and thus more likely to open up and just sometimes you get some traction with others who will follow your lead. 
+_because_ ... others see you doing the right thing - builds trust, making people feel safe and thus more likely to open up and just sometimes you get some traction with others who will follow your lead. 
 
 _Safety_ is all important. People will generally be far more likely to open up about existing problems if they feel safe. Water cooler conversations are great. Impromptu one-on-ones after a stand-up are great. 
 
