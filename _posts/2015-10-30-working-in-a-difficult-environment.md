@@ -71,7 +71,7 @@ And if you're suffering, try and find a sympathetic ear. Even having a vent to a
 
 Negative thinking usually creeps in pretty quickly too. For example, it's pretty easy to start thinking something like "He's the problem". Um, no. He's not the problem. His management style might be a problem. Her approach to software development might be a problem. But in general, people are doing their best. Just because someone isn’t good at their job, and in toxic environments this is pretty common at the leadership (or lack of) levels, doesn't mean they are intentionally trying to make your life hell. This is a great opportunity to take a step back and think about how you can help _them_ be better at _their_ job.  
 
-And it's never personal. Even if sometimes, the odd _cray cray_ individual wants to make it so, it's never about you. Stay calm and immediately reach out to your leadership group, LC/PC as this sort of stuff is completely out of order. 
+And it's never personal. Even if sometimes, the odd _cray cray_ individual wants to make it so, it's never about you. Stay calm and immediately reach out to your leadership group as this sort of stuff is completely out of order. 
 
 ## Silver linings 
 
