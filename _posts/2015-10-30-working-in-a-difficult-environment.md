@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Working in a Difficult Environment
-categories: [development,people]
-tags: []
+categories: []
+tags: [development,process,people]
 date: 2015-10-30 23:07:20
 ---
 

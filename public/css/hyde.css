@@ -193,6 +193,15 @@ a.sidebar-nav-item:focus {
   color: #999;
 }
 
+.post-tag {
+  color: #001;
+  font-size: 0.75rem;
+}
+
+.post-date {
+  font-size: 0.75rem;
+}
+
 /*
  * Themes
  *
