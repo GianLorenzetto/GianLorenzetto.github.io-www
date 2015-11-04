@@ -193,13 +193,17 @@ a.sidebar-nav-item:focus {
   color: #999;
 }
 
+/*
+ * Post Subheading
+ */
+.post-subheading {
+  margin-bottom: 1rem;
+}
+
 .post-tag {
   color: #001;
   font-size: 0.75rem;
-}
-
-.post-date {
-  font-size: 0.75rem;
+  vertical-align: text-bottom;
 }
 
 /*

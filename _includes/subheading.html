@@ -1,0 +1,25 @@
+<div class="post-subheading">
+  <span class="post-date">{{ include.post.date | date_to_string }}</span>
+
+  <span class="post-tag">
+    {% if include.post.categories != empty %}
+      {
+    {% endif %}
+
+    {% for cat in include.post.categories %}
+      {{ cat }}
+    {% endfor %}
+
+    {% if include.post.tags != empty %}
+      |
+    {% endif %}
+
+    {% for tag in include.post.tags %}
+      {{ tag }}
+    {% endfor %}
+
+    {% if include.post.categories != empty %}
+      }
+    {% endif %}
+  </span>
+</div>
