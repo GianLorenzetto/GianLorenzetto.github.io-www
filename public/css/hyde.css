@@ -194,6 +194,13 @@ a.sidebar-nav-item:focus {
 }
 
 /*
+ * Post title
+ */
+.post-title {
+	margin-bottom: .1rem;
+}
+
+/*
  * Post Subheading
  */
 .post-subheading {
@@ -203,7 +210,13 @@ a.sidebar-nav-item:focus {
 .post-tag {
   color: #001;
   font-size: 0.75rem;
-  vertical-align: text-bottom;
+  vertical-align: middle;
+}
+
+.post-tagdesc {
+	color: #aaa;
+	margin-left: .2rem;
+	margin-right: .2rem;
 }
 
 /*

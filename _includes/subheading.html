@@ -3,7 +3,7 @@
 
   <span class="post-tag">
     {% if include.post.categories != empty %}
-      {
+      <span class="post-tagdesc">in</span>
     {% endif %}
 
     {% for cat in include.post.categories %}
@@ -11,7 +11,7 @@
     {% endfor %}
 
     {% if include.post.tags != empty %}
-      |
+      <span class="post-tagdesc">tags</span>
     {% endif %}
 
     {% for tag in include.post.tags %}
@@ -19,7 +19,7 @@
     {% endfor %}
 
     {% if include.post.categories != empty %}
-      }
+      
     {% endif %}
   </span>
 </div>
