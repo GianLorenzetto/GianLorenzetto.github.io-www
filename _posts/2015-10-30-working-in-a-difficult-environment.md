@@ -3,7 +3,7 @@ layout: post
 title: Working in a Difficult Environment
 categories: [development,people]
 tags: []
-date: 2015-10-30 23:07:20
+date: 2015-10-30
 ---
 
 ## Toxic Environments
