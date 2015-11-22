@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Azure, TeamCity and OctopusDeploy - Part 1
-categories: [Technical,Readify,OD,Azure,TC,CI]
-tags: [Azure,TC,TeamCity,OD,OctopusDeploy,Readify,Gian,CI,Zaatar,microsoft]
-date: 2015-10-26 11:29:45
+categories: [Development]
+tags: [Azure,TeamCity,OctopusDeploy,CI]
+date: 2015-11-22 08:44:37
 ---
 
 Recently, [Mohamed](https://twitter.com/mzaatar) (a fellow Readifarian) and I spent some time creating a complete build and deployment pipeline. Our main goal was to create a fully functional [CI](https://www.thoughtworks.com/continuous-integration) server in Azure, with [TeamCity](https://www.jetbrains.com/teamcity/) for builds and [OctopusDeploy](https://octopus.com/) for deployments.
