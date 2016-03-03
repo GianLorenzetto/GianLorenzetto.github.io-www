@@ -6,11 +6,11 @@ tags: [YOW]
 date: 2016-03-03 15:00:00
 ---
 
-# YOW! 2015 Highlights
-
 A few quick highlights from YOW! 2015. Presentations are online at the [YOW! Australia](https://www.youtube.com/user/YOWAustralia) YouTube channel.
 
 The individual headings are linked to the YouTube videos. Note that I attended the Melbourne event, but some of the video's are from Sydney or Brisbane events.
+
+<!--more-->
 
 # [Don Reinertsen - Thriving in a Stochastic World](https://www.youtube.com/watch?v=wyZNxB172VI)
 
