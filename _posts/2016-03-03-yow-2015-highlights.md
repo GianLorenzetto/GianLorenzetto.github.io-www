@@ -8,7 +8,7 @@ date: 2016-03-03 15:00:00
 
 Some highlights and a short summary from my attendance at [YOW!](http://yowconference.com.au) 2015. All the presentations are online at the [YOW! Australia](https://www.youtube.com/user/YOWAustralia) YouTube channel.
 
-Note that the section headings are linked to the corresponding presentation video. I attended the Melbourne conference, but some of the video's are from Sydney or Brisbane events.
+Note that the section headings are linked to the corresponding presentation video. I attended the Melbourne conference, but some of the videos are from Sydney or Brisbane events.
 
 <!--more-->
 
