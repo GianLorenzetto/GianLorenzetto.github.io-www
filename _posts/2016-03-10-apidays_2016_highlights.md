@@ -10,6 +10,8 @@ My notes and highlights from [APIDays](http://au.apidays.io) 2016 in Melbourne.
 
 Slides are available for most presentations and are linked to from the abstract pages for each talk. You can get to the abstracts by clicking through the links to each individual talk in the [program](http://au.apidays.io/#program).
 
+<!--more-->
+
 # [Steve Sammartino - Welcome to Startup Land](http://au.apidays.io/slides/sammartino-startup-land.pdf)
 
 This was the first keynote on day one and kicked things off with some interesting thinking around innovation, what it is, what it means and how it can challenge older / larger organisations who have operated in the same way for a long time. 
