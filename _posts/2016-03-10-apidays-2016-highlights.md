@@ -16,13 +16,13 @@ Slides are available for most presentations and are linked to from the abstract 
 
 This was the first keynote on day one and kicked things off with some interesting thinking around innovation, what it is, what it means and how it can challenge older / larger organisations who have operated in the same way for a long time. 
 
-He discussed how companies, in the context of innovation, should embrace _horizontal thinking_. The example being that of Fosters (a large brewer) should be investing heavily in auto-driving cares. Pretty funny, but also pretty savvy and set the tone for a number of examples of how innovation can come through the connection of devices we never would have considered.
+He discussed how companies, in the context of innovation, should embrace _horizontal thinking_. The example being that of Fosters, a large brewing company and that they should be investing heavily in auto-driving cars :) Pretty funny, but also pretty savvy and set the tone for a number of examples of how innovation can come about through the connection of devices we never would have considered.
 
 Another example was that of the connected toilet! Imagine a toilet that actually took your blood pressure, blood glucose levels, heart rate, dietary contents (ewww) and so on and fed that to your doctor! It's a pretty brutal invasion of privacy (my first thought) but if it means that your doctor can catch cancer and tell you before you even notice any symptoms then that might just be worth it? ...
 
 On APIs themselves, he stressed that you shouldn't be afraid of selling an unfinished product, as this can allow you to develop an eco-system with some early consumers who in turn can help drive the product in new and unexpected ways. That is, let the consumers tell you what they want. Not so revolutionary but worth remembering!
 
-He also made the point, again worth remembering, that _how_ something works is less important than _what_ it can do, particular in the context of innovation.
+He also made the point, again worth remembering, that _how_ something works is less important than _what_ it can do, particularly in the context of innovation.
 
 # [James Bligh (NAB) - Digital Innovation in a 150 year old bank](http://au.apidays.io/slides/bligh-nabapi-journey.pdf)
 
@@ -38,9 +38,11 @@ They also discovered a lot of unknown (or unexpected) usage, and had to adapt qu
 
 Their architecture is actually pretty neat. They still maintain their core banking system (from probably decades ago) and enterprise service bus, with 18 month (yikes!) releases, which all must conform to the various government regulations. But, sitting on top of that is a bunch of _service engines_ (read micro services) that give them far more agile capabilities for web and mobile apps. This provides them a way to integrate the different modes of change and different stakeholders at different levels.
 
-Obviously, this was a massive undertaking and has been ongoing for some time (5+ years?). However, they approached it from a small-steps perspective (what, no more big-bang, $100mil projects? How surprising ...) and managed to define boundaries within the organisation to begin segregating services, which could then be built out one at a time into the various service engines. It would be interesting to find out how they manage to separate those pieces, which are often tightly and often surprisingly coupled. (Mentioned strict governance, which would help if there is a strong hand in what's in and what's out)
+Obviously, this was a massive undertaking and has been ongoing for some time (5+ years?). However, they approached it from a small-steps perspective (what, no more big-bang, $100mil projects? How surprising ...) and managed to define boundaries within the organisation to begin segregating services, which could then be built out one at a time into the various service engines. It would be interesting to find out how they manage to separate those pieces, which are often tightly and often surprisingly coupled. (He mentioned strict governance, which would help if there is a strong hand in what's in and what's out.)
 
-One last thing James said, which I quite liked was (and I'm paraphrasing a little): when faced with a choice, which one is more awesome? Which one are you/ would you be proud of?
+One last thing James said, which I quite liked was (and I'm paraphrasing a little): 
+
+>when faced with a choice, which one is more awesome? Which one are you/ would you be proud of?
 
 Seems like a pretty good way to make a decision :)
 
