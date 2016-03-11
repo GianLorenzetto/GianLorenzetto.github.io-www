@@ -36,7 +36,7 @@ He also aid that, for NAB, an API is the most cost effective and flexible strate
 
 They also discovered a lot of unknown (or unexpected) usage, and had to adapt quickly, not just to maintain their service but to take advantage of opportunities as they arise.
 
-Their architecture is actually pretty neat. They still maintain their core banking system (from probably decades ago) and enterprise service bus, with 18 month (yikes!) releases, which all must conform to the various government regulations. But, sitting on top of that is a bunch of _service engines_ (read micro services) that give them far more agile capabilities for web and mobile apps. This provides them a way to integrate the different modes of change and different stakeholders at different levels.
+Their architecture is actually pretty neat. They still maintain their core banking system (from probably decades ago) and enterprise service bus, with 18 month (yikes!) releases, which all must conform to the various government regulations. But, sitting on top of that is a bunch of _service engines_ (read micro services) that give them far more agile capabilities for web and mobile applications. This provides them a way to integrate the different modes of change and different stakeholders at different levels.
 
 Obviously, this was a massive undertaking and has been ongoing for some time (5+ years?). However, they approached it from a small-steps perspective (what, no more big-bang, $100mil projects? How surprising ...) and managed to define boundaries within the organisation to begin segregating services, which could then be built out one at a time into the various service engines. It would be interesting to find out how they manage to separate those pieces, which are often tightly and often surprisingly coupled. (He mentioned strict governance, which would help if there is a strong hand in what's in and what's out.)
 
@@ -48,13 +48,13 @@ Seems like a pretty good way to make a decision :)
 
 # [Kirsten Hunter (Akamai) - Irresistible APIs](http://au.apidays.io/slides/hunter-irresistable-apis.pdf)
 
-This was another intersting presentation, focused on what makes an API great? What makes it something consumers want to use?
+This was another interesting presentation, focused on what makes an API great? What makes it something consumers want to use?
 
-Not surprisingly, her advice was to focus on the business value, not the tech. But she presented it from the perspective of telling a story and focusing on what does your API enable? Why is it useful?
+Not surprisingly, her advice was to focus on the business value, not the technology. But she presented it from the perspective of telling a story and focusing on what does your API enable? Why is it useful?
 
-She also touched on how to measure the success of an API? And it's not just not just API key count :) You should be asking how are your users using your API? How active are they? Are they returning? Are they using it the way you want/intended?
+She also touched on how to measure the success of an API? And it's not just API key count :) You should be asking how are your users actually using your API? How active are they? Are they returning? Are they using it the way you want/intended?
 
-And most of all, are you capturing this data? (hint: you should be, even if you're not actively using / mining it right now, you may well be tomorrow).
+And most of all, are you capturing this data? (Hint: you should be, even if you're not actively using / mining it right now, you may well be tomorrow).
 
 Some guidance she offered included don't surprise your users and REST is not always best. Focus on usability and your driving use cases, not REST perfection. Also focus on _deliberate design_ - she stressed that governance was important in ensuring that an API stayed focused and coherent.
 
