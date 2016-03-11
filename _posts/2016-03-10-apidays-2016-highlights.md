@@ -134,7 +134,7 @@ He also mentioned using [Postman](https://www.getpostman.com) as a tool for expl
 
 # Tim liddlelow (ANZ) -  an API primer
 
-_[No slides link available at time of writing]_
+_No slides link available at the time of writing._
 
 This was kind of a surprise. He had some really thoughtful stuff to say on designing your APIs, and that APIs are about exposing your business data to a consumer not an application programming interface in the traditional software library sense.
 
@@ -165,7 +165,7 @@ Answer: The enormous amount of machinery between the user and back end (proxy, f
 
 # Adeel Ali (Apimatic) - Apis in the real world
 
-_[No slides link available at time of writing]_
+_No slides link available at the time of writing._
 
 These guys analysed around 11,500 APIs! Some of the findings where that 70% didn't include an authentication type in a discoverable way and that only 12% included category information. Honestly I'm not sure of the significance of either of those, but it does speak to the larger issue of discoverability of an API. If you're going to make a public API then make it discoverable! Or don't make it public. Geez.
 
@@ -181,9 +181,9 @@ And MS has a complete API reference here [aka.ms/apiref](http://Aka.ms/apiref).
 
 Oh, and then there's [Project Oxford](https://www.projectoxford.ai) - a bunch of AI based APIs for speech, vision and language. Super awesome sauce ;)
 
-# Rob Valk (Sixtree) - Scaling the bikeshed with Jason API
+# Rob Valk (Sixtree) - Scaling the bikeshed with Jason API 
 
-_[No slides link available at time of writing]_
+_No slides link available at the time of writing._
 
 Provided some nice thoughts on how to think about your API and that's it's a
 resource graph, not domain graph. Trotted out HATEOS (**H**ypertext **A**s **T**he **E**ngine **O**f **S**tate) again, which is the Worst Acronym Ever (WAE?).
