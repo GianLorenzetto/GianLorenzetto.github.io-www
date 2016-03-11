@@ -64,7 +64,7 @@ Interestingly, Akamai has an API working group enforcing schema model before API
 
 # [Michael Hyatt (MuleSoft) - User delight driven design of APIs](http://au.apidays.io/slides/hyatt-user-delight-driven-apis.pdf)
  
-Live demo of RAML to create an API schema in AnyPoint (from MuleSoft). Mentioned APX (API experience design). Is that a thing now!?
+Live demo of [RAML (RESTful API Modelling Language)](http://raml.org) to create an API schema in AnyPoint (from MuleSoft). Mentioned APX (API experience design). Is that a thing now!?
 
 One interesting thing about RAML is that it includes the concept of traits (such as marking a collection as having an order).
 
@@ -72,7 +72,7 @@ One interesting thing about RAML is that it includes the concept of traits (such
 
 This presentation focused on the [NARWHL](http://www.narwhl.com) design framework for thinking about how to design adaptable API's.
 
-NARWHL stands for **N**oun as **A** **R**esource **W**ith **H**yper**L**inks and is a resource oriented architecture (not service oriented arch).
+NARWHL stands for **N**oun as **A** **R**esource **W**ith **H**yper**L**inks and is a resource oriented architecture (as opposed to service oriented).
 
 From the website:  
 
@@ -92,7 +92,7 @@ She also has an interesting GitHub project up called [API in a box](https://gith
 
 >API-in-a-Box is exactly what it sounds like. Say you have a handful of CSV files that you need a searchable API for. Put those files in Github repository, spin up this API-in-a-Box, and there you go! A REST hypermedia API that utilizes Elasticsearch's killer searching.
 
-It was interesting to see the unexpected uses of open data. If data is not made available, then these connections will never be made, no matter how much _innovating_ government (or other) tries to do.
+It was interesting to see the unexpected uses of open data. If data is not made available, then these connections will never be made, no matter how much innovating government (or other) tries to do.
 
 # [Graham Lea (Tyro) - Building a bank out of micro services](http://au.apidays.io/slides/lea-microservices-bank.pdf)
 
@@ -104,25 +104,25 @@ I believe the original is:
 
 > ... a service-oriented architecture composed of loosely coupled elements that have bounded contexts.
 
-I like the addition of distributed in there, but he also had a whole list of guidance around building APIs. He recommended ensuring a _single responsibility for each service_, and that you must define and document your services. He talked about _responsible services_, which are services that use as few other services as possible.
+I like the subtle change to _distributed architecture_, but he also had a whole list of guidance around building APIs. He recommended ensuring a _single responsibility for each service_, and that you must define and document your services. He talked about _responsible services_, which are services that use as few other services as possible.
 
 He also touched on _data ownership_, and that it's a good idea to have one schema per service, independent of all other services. In this way you can avoid inappropriate joining (why does that sound so funny? ... ahem)
 
-More tips included caching data where processing happens, preferring async communication wherever possible and that if two services are very chatty then they are probably the same service (hint: combine them into one, or reconsider their contexts, because their boundaries are not well defined or separated). They also used [Pact](https://github.com/realestate-com-au/pact) for testing.
+More tips included caching data where processing happens, preferring async communication wherever possible and that if two services are very chatty then they are probably the same service (Hint: combine them into one, or reconsider their contexts, because their boundaries are not well defined or separated). They also used [Pact](https://github.com/realestate-com-au/pact) for testing.
 
 One more general piece of advice he gave was to organise the team around the work. This is really good to remember, as organising the work around the team is just silo'ing and shifts focus away from features / business value. 
 
 # [Steven Willmott (3scale) - Entering the platform age](http://www.slideshare.net/3scale/entering-the-platform-age-how-to-create-genuine-value-for-internal-and-external-api-consumers)
 
-The keynote from day 2, and stressed again the need for governance and communication around your APIs. He also made an interesting point about the shift from 1-1 to 1-N client server interactions, and even further to N-N interactions with the proliferation of both connected devices and services.
+The keynote from the second day, and stressed again the need for governance and communication around your APIs. He also made an interesting point about the shift from 1-1 to 1-N client server interactions, and even further to N-N interactions with the proliferation of both connected devices and services.
 
 He made a great point that the value of any platform lies in allowing co-creation between providers and consumers. Makes sense.
 
-He also used put up a diagram with expectation on one axis (expected to unexpected) and outcome on the other (desirable to undesirable). He then made focused on the undesirable outcomes and made the wonderful connection of innovation as something that is _unexpected_ and _desirable_. He also described the alternative of _unexpected_ and _undesirable_ as a fire drill :)
+He also put up a diagram with expectation on one axis (ranging from expected to unexpected) and outcome on the other (ranging from desirable to undesirable). He then focused on the undesirable outcomes and made the wonderful connection of innovation as something that is _unexpected_ and _desirable_. He also described the alternative of _unexpected_ and _undesirable_ as a fire drill :)
 
-Other interesting guidance was to not focus on the developer, as although they may be the _enabler_ of the user, it is actually the user who really consumes your API (hint: focus on the why? of your API, not the how?) Logically following on from this he noted that the measure of success of an API is not the number of hits, but the number of businesses (or amount of business value) enabled. 
+Other interesting guidance was to not focus on the developer, as although they may be the _enabler_ of the user, it is actually the user who really consumes your API (Hint: focus on the _why_ of your API, not the _how_). Logically following on from this he noted that the measure of success of an API is not the number of hits, but the number of businesses (or amount of business value) enabled. 
 
-One last bit of advice was that voice activation / commands will change APIs because they will need better ordering and filtering, it's simply not good enough to return just pages of data. Not sure I have an opinion, but it is interesting to think about how the if the consumers usage changes subtly (typing in a search box to asking Siri to find a nearby restaurant), it could have ramifications for your APIs usability.
+One last bit of advice was that voice activation / commands will change APIs because they will need better ordering and filtering, it's simply not good enough to return just pages of data. Not sure I have an opinion, but it is interesting to consider what happens if the consumers usage changes subtly (typing in a search box becomes asking Siri to find a nearby restaurant), and what ramifications that might have for your APIs usability.
 
 # [Uli holtel (BankWest) - following the signs](http://au.apidays.io/slides/holtel-follow-the-signs.pdf)
 
@@ -130,11 +130,13 @@ This one was about hypermedia, which he uniquely described as runtime intellisen
 
 He did have some other guidance, based around what level of coupling your API and client can successfully support. Some scenarios to keep in mind are: Internal versus external; API ownership; Single versus multi-client; Process ownership (are you the thought leader of the process?); Rate of change; and API context sensitivity (how sensitive is your API usage to web client, mobile device, tablet etc).
 
-He also mentioned using [Postman](https://www.getpostman.com) as a tool for exploring API. I haven't used this before, but looks quite nice.
+He also mentioned using [Postman](https://www.getpostman.com) as a tool for exploring APIs. I haven't used this before, but looks quite nice.
 
-# Tim liddlelow (ANZ) -  an API primer (no slides link available)
+# Tim liddlelow (ANZ) -  an API primer
 
-This was kind of a surprise. He had some really thoughtful stuff to say on designing your APIs, and that APIs are about exposing your business data to a consumer not an app programming interface in the traditional software library sense.
+_[No slides link available at time of writing]_
+
+This was kind of a surprise. He had some really thoughtful stuff to say on designing your APIs, and that APIs are about exposing your business data to a consumer not an application programming interface in the traditional software library sense.
 
 The quote of the conference for me (paraphrasing a little):
 
@@ -147,27 +149,29 @@ He also noted that API management is very different to desktop applications or e
 Some really useful insights into building APIs. Again he reinforced the need to gather analytics for your API. Things like usage, context and work flows. You should also keep in mind that you need to correlate usage with accounts as
 people will use your API in ways you never imagined and you want to see that data.
 
-He mentioned the [Charles](https://www.charlesproxy.com) tool for watching http traffic and noted that you really need to be aware of what can be sniffed from your API (obviously this will be more of less serious depending on the data you're sending).
+He mentioned the [Charles](https://www.charlesproxy.com) tool for watching HTTP traffic and noted that you really need to be aware of what can be sniffed from your API (obviously this will be more or less serious depending on the data you're sending).
 
 Quote of the presentation:
 
->Use HTTP / REST and get over it :)
+>Use HTTP / REST and get over it.
 
-He talked a bit about rate limiting and that it can be a good idea to include a "retry after" meta data element in http header.
+He talked a bit about rate limiting and that it can be a good idea to include a "retry after" meta data element in HTTP header.
 
 He also noted that side-loading is OK. Be pragmatic about it and pre-package data if necessary. You don't have to deliver everything over your API. And get your versioning sorted early!
 
-He posed the question: Why is rest the only real API?
+He posed the question: Why is REST the only real API?
 
-The answer being the enormous amount of machinery between the user and back end (proxy, firewall, servers) and that you're likely to be hitting a different server every request at scale. The point being these things only work well with REST, building on all the intelligence (caching etc) along the way.
+Answer: The enormous amount of machinery between the user and back end (proxy, firewall, servers) and that you're likely to be hitting a different server every request when at scale. The point being these things only work well with REST, building on all the intelligence (caching etc) along the way.
 
-# Adeel Ali (Apimatic) - Apis in the real world (no link to slides available)
+# Adeel Ali (Apimatic) - Apis in the real world
+
+_[No slides link available at time of writing]_
 
 These guys analysed around 11,500 APIs! Some of the findings where that 70% didn't include an authentication type in a discoverable way and that only 12% included category information. Honestly I'm not sure of the significance of either of those, but it does speak to the larger issue of discoverability of an API. If you're going to make a public API then make it discoverable! Or don't make it public. Geez.
 
 He also stressed (probably because they've tried to build an automated API discovery tool) that you really shouldn't violate the basic tenants of HTTP (safety, cachability, idempotency), but otherwise do what best suits your need.
 
-# [Nick ward (MS) & Jorge Arteiro (Kloud) Mobile innovation in the mobile first, cloud first world](http://au.apidays.io/slides/ward-arteiro-api-innovation.pdf)
+# [Nick ward (MS) & Jorge Arteiro (Kloud) - Mobile innovation in the mobile first, cloud first world](http://au.apidays.io/slides/ward-arteiro-api-innovation.pdf)
 
 Microsoft have consolidated their APIs! [Try it out here](http://graph.microsoft.com).
 
@@ -175,18 +179,20 @@ It's kinda awesome sauce (any parents of Furby toting toddlers out there?)
 
 And MS has a complete API reference here [aka.ms/apiref](http://Aka.ms/apiref).
 
-Oh, and then there's [Project Oxford](https://www.projectoxford.ai) - a bunch of AI based APIs for speech, vision and language. Awesom_er_ sauce ;)
+Oh, and then there's [Project Oxford](https://www.projectoxford.ai) - a bunch of AI based APIs for speech, vision and language. Super awesome sauce ;)
 
 # Rob Valk (Sixtree) - Scaling the bikeshed with Jason API
 
+_[No slides link available at time of writing]_
+
 Provided some nice thoughts on how to think about your API and that's it's a
-resource graph, not domain graph. Trotted out HATEOS again, which is the Worst Acronym Ever (WAE?).
+resource graph, not domain graph. Trotted out HATEOS (**H**ypertext **A**s **T**he **E**ngine **O**f **S**tate) again, which is the Worst Acronym Ever (WAE?).
 
-He talked about _bikeshedding_, a term I hadn't heard before, but means spending too much time on trivial issues. It comes from [Parkinsons Law of Triviality](https://en.wikipedia.org/wiki/Law_of_triviality) - go read the Examples section (it's pretty funny), but it revolves around a local council debating the colour of a bike shed that was to be built next to nuclear reactor.
+He talked about _bikeshedding_, a term I hadn't heard before, but means spending too much time on trivial issues. It comes from [Parkinsons Law of Triviality](https://en.wikipedia.org/wiki/Law_of_triviality) - go read the Examples section (it's pretty funny), but it revolves around a local council debating the colour of a bike shed that was to be built next to a nuclear reactor.
 
-He also mentioned JSON API (which is derived from emberjs I believe?) and that it's best to use a library ([there are plenty available](http://jsonapi.org/implementations/). One interesting feature is that you can use the _include_ property to force linking to duplicated entities (and this is why you want to use a library to automate the construction of the JSON!)
+He also mentioned [JSON API](http://jsonapi.org) and that it's best to use a library (and there are [plenty available](http://jsonapi.org/implementations/)). One interesting feature is that you can use the _include_ property to force linking to duplicated entities (and this is why you want to use a library to automate the construction of the JSON!)
 
-JSON API also plays much nicer with dynamic languages, but less so with static languages where the effort to parse the structured JSON back into objects is onerous (hence (again) the use of libs).
+JSON API also plays much nicer with dynamic languages, but less so with static languages where the effort to parse the structured JSON back into objects is onerous (hence (again) the advice to go use a library).
 
 # Summary
 
@@ -195,6 +201,8 @@ Overall quite an interesting and diverse bunch of presentations. I liked the rep
 API management also came up a bit, although no one really offered much in the way of a solution or guidance, other than it's difficult and requires attention.
 
 Design first was also a major topic, but again there are lots of options available here. Just keep focused on _why_ you are building your API.
+
+I also hadn't thought to much about APIs and being context aware, but I guess this is really something that will only become more and more salient with the proliferation of connected devices (mobiles, tablets, browsers, toilets, fridges, TVs ...)
 
 Lastly, there where a number of people who described a split in their development teams, almost always around the API "layer". I think this is OK, so long as people are not pigeon holed on either side and everyone is involved in the API design.
 
