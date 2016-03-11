@@ -8,7 +8,7 @@ date: 2016-03-10 12:40:00
 
 My notes and highlights from [APIDays](http://au.apidays.io) 2016 in Melbourne.
 
-Slides are available for most presentations and are linked to from the abstract pages for each talk. You can get to the abstracts by clicking through the links to each individual talk in the [program](http://au.apidays.io/#program).
+Slides are available for most presentations and are linked to from the section headings. You can also get to the slides via the abstract pages for each talk, which you can get to by clicking through the links to each individual talk in the [APIDays program](http://au.apidays.io/#program).
 
 <!--more-->
 
@@ -40,9 +40,9 @@ Their architecture is actually pretty neat. They still maintain their core banki
 
 Obviously, this was a massive undertaking and has been ongoing for some time (5+ years?). However, they approached it from a small-steps perspective (what, no more big-bang, $100mil projects? How surprising ...) and managed to define boundaries within the organisation to begin segregating services, which could then be built out one at a time into the various service engines. It would be interesting to find out how they manage to separate those pieces, which are often tightly and often surprisingly coupled. (He mentioned strict governance, which would help if there is a strong hand in what's in and what's out.)
 
-One last thing James said, which I quite liked was (and I'm paraphrasing a little): 
+One last thing James said, which I quite liked, was the following (and I'm paraphrasing a little): 
 
->when faced with a choice, which one is more awesome? Which one are you/ would you be proud of?
+>When faced with a choice, which one is more awesome? Which one are you/ would you be proud of?
 
 Seems like a pretty good way to make a decision :)
 
@@ -64,9 +64,9 @@ Interestingly, Akamai has an API working group enforcing schema model before API
 
 # [Michael Hyatt (MuleSoft) - User delight driven design of APIs](http://au.apidays.io/slides/hyatt-user-delight-driven-apis.pdf)
  
-Live demo of RAML to create an API schema in AnyPoint (from MuleSoft). Mentioned APX (API experience design), is that a thing now?
+Live demo of RAML to create an API schema in AnyPoint (from MuleSoft). Mentioned APX (API experience design). Is that a thing now!?
 
-One interesting thing about RAML is that it has the concept of traits (such as marking a collection as having an order).
+One interesting thing about RAML is that it includes the concept of traits (such as marking a collection as having an order).
 
 # [Rob Zazueta (TIBCO Mashery) - The RESTed NARWHAL](http://au.apidays.io/slides/zazueta-rested-narwhl.pdf)
 
