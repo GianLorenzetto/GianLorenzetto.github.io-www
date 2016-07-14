@@ -3,7 +3,7 @@ layout: post
 title: WebAPI Wildcard In Route
 categories: [development]
 tags: [webapi]
-date: 2016-07-14 16:25:00
+date: 2016-07-14 19:44:00
 
 ---
 
@@ -21,4 +21,10 @@ Essentially, everything beyond the `route/` part of the url will be assigned to 
 
 `some/route/more/parts/here?param=1`
 
-will result in the variable `key` having the value `more/parts/here?param=1`. This can be useful for things like file storage and other uri params that may include folder paths or similar.
+results in 
+
+``` csharp
+key = "more/parts/here?param=1";
+```
+
+This can be useful for things like file storage and other uri params that may include folder paths or similar.
