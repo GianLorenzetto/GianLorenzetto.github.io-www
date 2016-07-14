@@ -37,4 +37,5 @@ A cheat sheet of common url's I use in my blog posts, formatted for Markdown.
 
 <pre>
 [Git Extensions](https://gitextensions.github.io)
+[PoshGit](https://github.com/dahlbyk/posh-git)
 </pre>
