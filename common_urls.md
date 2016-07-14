@@ -32,3 +32,9 @@ A cheat sheet of common url's I use in my blog posts, formatted for Markdown.
 [Jekyll package](https://packagecontrol.io/packages/Jekyll)
 [MarkdownEditing Package](https://github.com/SublimeText-Markdown/MarkdownEditing)
 </pre>
+
+# Git
+
+<pre>
+[Git Extensions](https://gitextensions.github.io)
+</pre>
