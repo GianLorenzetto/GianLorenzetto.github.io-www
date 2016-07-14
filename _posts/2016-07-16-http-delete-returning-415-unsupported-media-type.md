@@ -3,7 +3,7 @@ layout: post
 title: Http Delete Returning 415 Unsupported Media Type
 categories: [development]
 tags: [webapi]
-date: 2016-07-14 13:55:00
+date: 2016-07-14 16:18:00
 
 ---
 
