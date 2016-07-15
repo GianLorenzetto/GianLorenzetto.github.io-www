@@ -4,6 +4,10 @@ highlighter:      rouge
 # Permalinks
 permalink:        pretty
 
+# Plugins
+whitelist: []
+gems:      ['jekyll-paginate']
+
 # Setup
 title:            Gian Lorenzetto
 tagline:          "The Art and Science of Software"

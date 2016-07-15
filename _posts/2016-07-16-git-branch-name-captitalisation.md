@@ -3,7 +3,7 @@ layout: post
 title: Git Branch Name Capitalisation
 categories: [development]
 tags: [git]
-date: 2016-07-14 16:04:00
+date: 2016-07-14 16:04:00 +0800
 
 ---
 

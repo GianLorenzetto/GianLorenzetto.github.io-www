@@ -3,12 +3,12 @@ layout: post
 title: WebAPI Wildcard In Route
 categories: [development]
 tags: [webapi]
-date: 2016-07-14 19:44:00
+date: 2016-07-14 19:44:00 +0800
 ---
 
 I recently discovered that it's possible to include a wildcard (the `*` character) in a WebApi route. It looks something like:
 
-```
+```csharp
 [Route(some/route/{*key})]
 ```
 
@@ -22,7 +22,7 @@ Essentially, everything beyond the `route/` part of the url will be assigned to 
 
 results in 
 
-```
+```csharp
 key = "more/parts/here?param=1";
 ```
 
