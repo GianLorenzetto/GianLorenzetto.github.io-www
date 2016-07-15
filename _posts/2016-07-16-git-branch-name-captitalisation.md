@@ -11,7 +11,7 @@ I recently had an odd experience where Git was, seemingly randomly, changing the
 
 tl;dr version, git stores branch prefixes like `Feature/` in a folder and file systems aren't case-sensitive. You need to delete the offending folder from `.git/refs/heads`. For a more detailed explanation, read on!
 
-<!-- more -->
+<!--more-->
 
 It'll all started when I began using a branch naming scheme like `Feature/branch-name` and I thought that the `Feature` prefix may have been the issue ... and it kind of was, just not how I expected :)
 
