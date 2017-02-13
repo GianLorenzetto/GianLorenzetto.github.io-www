@@ -1,0 +1,18 @@
+* Generating REST client in C# ... who knew it was a thing?? :)
+
+* Include AutoRest nuget in your project and away you go.
+
+$serviceName = "ItemLookupService"
+
+$scriptpath = $MyInvocation.MyCommand.Path
+$dir = Split-Path $scriptpath
+cd $dir
+
+Write-Host "*** Cleaning Previous Client ***"
+If (Test-Path "Models") { Remove-Item "Models" -Recurse }
+Remove-Item *.cs
+
+Write-Host "*** Starting Client Generation for service: $serviceName ***"
+../../../packages/AutoRest.0.16.0/tools/AutoRest.exe -Input "$serviceName.json" -Namespace "iPOS.RestClients.$serviceName" -ClientName "$serviceNameClient" -OutputDirectory .
+
+Write-Host "*** Finished Generating Client for service: $serviceName ***"

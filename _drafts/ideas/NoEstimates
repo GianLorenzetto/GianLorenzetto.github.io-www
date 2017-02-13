@@ -1,0 +1,8 @@
+My take on no estimates
+
+- You can still (and must) size stories in some fashion.
+- Relative sizing is good (gut feel, is the story a good size for the Sprint? relative sizing, t-shirt sizing, whatever)
+- Stop here ...
+- There is no estimation, no associating any concept of time with a PBI
+- Story counting is used for velocity (in my limited experience, this is just as good as story points)
+- In particular, there is no breaking stories down into tasks and putting hours against them (I find this one particularly onerous, time consuming and wasteful) 
