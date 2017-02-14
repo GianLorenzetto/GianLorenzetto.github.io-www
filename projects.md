@@ -27,7 +27,7 @@ To make it a little easer to find and use, I’ve [created a GitHub repo](https:
 
 A lot of the tools and utilities I’ve picked up over the years I discovered through [Scott Hanselman’s Ultimate Tools List](http://hanselman.com/tools), which is a great place to visit every now and again to see what’s hot and what’s dropped off.
 
-I plan to update this as I come across new tools, add and update config files and start a list of useful notes on configuring different tools (Parallels for Mac will probably be first in the list).
+I plan to update this as I come across new tools, add and update config files and start a list of useful notes on configuring different tools.
 
 Hope it’s useful to someone and please let me know if there’s a better tool out there! :)
 
