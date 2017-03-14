@@ -1,6 +1,15 @@
-Software Estimation and No Estimates
+---
+layout: post
+title: Software Estimation and No Estimates
+categories: [development]
+tags: [process, agile, estimation]
+date: 2017-03-14 12:08:00 +0800
+author: Gian Lorenzetto
+---
 
  Agile For Humans podcast [Software Estimation with Steve McConnell](http://ryanripley.com/afh-052-software-estimation-with-steve-mcconnell-podcast/)
+
+<!--more-->
 
 Estimation types - forecasting is what software dev employs, amount of future work (not judging he size of a crowd)
 

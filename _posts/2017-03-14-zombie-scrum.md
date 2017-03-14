@@ -7,7 +7,7 @@ date: 2017-03-14 11:08:00 +0800
 author: Gian Lorenzetto
 ---
 
-One problem I have noticed several times now is that of Zombie Scrum, or Scrum-by-numbers. It's an issue where someone has implemented Scrum some time back, and the implementation has stagnated.
+One problem I've seen on several occaisons now is that of _Zombie Scrum_, or _Scrum-by-numbers_. It's an issue whereby someone has implemented Scrum some time back, and the implementation has stagnated.
 
 Symptoms usually include the team doing all the ceremonies correctly, but not yielding the on-going benefits. A lot of practices (especially the daily Scrum) start to feel forced, or lose purpose.
 
