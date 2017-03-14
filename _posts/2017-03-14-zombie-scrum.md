@@ -18,10 +18,15 @@ Symptoms usually include the team doing all the ceremonies correctly, but not yi
 It's usually categorised by a conversation that goes:
 
 > Me: "Do you use an agile process?"
+
 > Them: "Yes, we do Scrum"
+
 > Me: "So what's your process look like?"
+
 > Them: "Err, we do Scrum?"
+
 > Me: "Ok, but what does your process look like day to day?"
+
 > Them: "Oh, yeah, we do stand-ups too!"
 
 When people transition to Scrum, from something like waterfall, there are a lot of benefits you get immediately: iterative development, tighter feedback loops, increased communication, increased transparency. These are all good things. But old habits die hard, and after a time, it can become very mechanical, and you see the team stabilise and start to cruise again. There is no more improvement in the system. And of course they're doing retro's, right? Probably, but I have rarely seen real, measurable change come out of a retro. Not that retro's are bad, just that they are hard, and you need to be able to quantify whatever it is you're looking to improve to know you've improved it, and most teams aren't that advanced in their metrics (other than gross measures like a shift in velocity).
@@ -36,9 +41,7 @@ By conflating these ideas, usually under the banner _capital-A_ Agile, it's easy
 
 I started thinking about this after listening to an [Agile For Humans](http://ryanripley.com/agile-for-humans/) podcast (_great_ podcast), where [Ron Quartel discussed how his team was using Scrum, but with no estimates and variable length iterations](http://ryanripley.com/afh-031-natural-software-development-using-noestimates-and-variable-length-sprints-podcast/). As a team, it was working really well for them (and the idea of MVI or Minimum Viable Increment is _gold_), but the more interesting point is that they where _experimenting_ with their process. In fact, he made reference to discovering the opening statement of the manifesto:
 
-"We are *uncovering* better ways of developing
-software by doing it and helping others do it.
-Through this work we have come to value:"
+> We are *uncovering* better ways of developing software by doing it and helping others do it. Through this work we have come to value: ...
 
 Now, I'm certain I've read that statement previously, but I too had never fully grasped the importance of the word *uncovering*. We should be constantly working towards new and better ways of working. Scrum is great, but so is Lean. You like no estimates? Do it. Just remember that agile is an empirical process (more below) you need to measure the outcomes and continuously work to improve. 
 
