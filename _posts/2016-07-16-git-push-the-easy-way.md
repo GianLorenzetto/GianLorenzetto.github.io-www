@@ -4,6 +4,7 @@ title: Git Push The Easy Way
 categories: [development]
 tags: [git]
 date: 2016-07-14 13:55:00 +0800
+author: Gian Lorenzetto
 ---
 
 Although I'm a big fan of [Git Extensions](https://gitextensions.github.io) on Windows, I still prefer the relative safety of the command line when doing things like pushing to the remote.

@@ -4,6 +4,7 @@ title: Http Delete Returning 415 Unsupported Media Type
 categories: [development]
 tags: [webapi]
 date: 2016-07-14 16:18:00 +0800
+author: Gian Lorenzetto
 ---
 
 When performing an HTTP Delete with a payload, WebAPI needs the content type to be specified, otherwise you're likely to see a `415 - Unsupported Media Type` response.
