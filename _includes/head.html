@@ -20,11 +20,13 @@
     <meta property="article:tag" content="{{ tag }}">
     {% endfor %}
   {% endif %}
-  
-  {% if author %}
-    <meta property="article:author" content="{{ author.name }}" />
+
+  {% if page.author %}
+    <meta property="article:author" content="{{ page.author }}" />
   {% endif %}
   
+  <link rel="author" href="https://gianlorenzetto.net/about">
+
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}public/css/poole.css">
   <link rel="stylesheet" href="{{ site.baseurl }}public/css/syntax.css">
