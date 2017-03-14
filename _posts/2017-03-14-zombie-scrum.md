@@ -16,12 +16,12 @@ Symptoms usually include the team doing all the ceremonies correctly, but not yi
 
 It's usually categorised by a conversation that goes:
 
-Me: "Do you use an agile process?"
-Them: "Yes, we do Scrum"
-Me: "So what's your process look like?"
-Them: "Err, we do Scrum?"
-Me: "Ok, but what does your process look like day to day?"
-Them: "Oh, yeah, we do stand-ups too!"
+> Me: "Do you use an agile process?"
+> Them: "Yes, we do Scrum"
+> Me: "So what's your process look like?"
+> Them: "Err, we do Scrum?"
+> Me: "Ok, but what does your process look like day to day?"
+> Them: "Oh, yeah, we do stand-ups too!"
 
 When people transition to Scrum, from something like waterfall, there are a lot of benefits you get immediately: iterative development, tighter feedback loops, increased communication, increased transparency. These are all good things. But old habits die hard, and after a time, it can become very mechanical, and you see the team stabilise and start to cruise again. There is no more improvement in the system. And of course they're doing retro's, right? Probably, but I have rarely seen real, measurable change come out of a retro. Not that retro's are bad, just that they are hard, and you need to be able to quantify whatever it is you're looking to improve to know you've improved it, and most teams aren't that advanced in their metrics (other than gross measures like a shift in velocity).
 
@@ -43,32 +43,21 @@ Now, I'm certain I've read that statement previously, but I too had never fully 
 
 Let's look at a couple of the 12 principals from the manifesto (the full list is [here](http://agilemanifesto.org/principles.html)):
 
-```
-Our highest priority is to satisfy the customer
-through early and continuous delivery
-of valuable software.
+> Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
 
-Business people and developers must work 
-together daily throughout the project.
+> Business people and developers must work together daily throughout the project.
 
-Build projects around motivated individuals. 
-Give them the environment and support they need, 
-and trust them to get the job done.
+> Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.
 
-Working software is the primary measure of progress.
+> Working software is the primary measure of progress.
 
-Simplicity--the art of maximizing the amount 
-of work not done--is essential.
+> Simplicity--the art of maximizing the amount of work not done--is essential.
 
-The best architectures, requirements, and designs 
-emerge from self-organizing teams.
-```
+> The best architectures, requirements, and designs emerge from self-organizing teams.
 
 You can see that following these principals is key to being agile and much more important than following a prescribed process. In fact, it says this right in the first value of the manifesto:
 
-```
-Individuals and interactions over *processes* and tools
-```
+> Individuals and interactions over *processes* and tools
 
 I see the conflation of the ideas as a problem, because people are afraid to try something new, because it "isn't Scrum", or it "isn't Lean" or worse, we don't want to do a "hybrid". Who cares! Just be agile. And let's not forget the irony in not wanting to deviate from scrum when; the PO doesn't sit with the team; the PO isn't full time; there's no scrum master; the team isn't self selecting ... need I go on?
 
@@ -78,13 +67,11 @@ One cautionary note: agile is based on the empirical model for process control. 
 
 Lastly, I wanted to quote a slide from Dave Thomas' [Agile is Dead](https://www.youtube.com/watch?v=vqz8ND-N1hc) presentation (which is great if you haven't seen it). He boils the agile process down to the following:
 
-```
-Find out where you are
-Take a small step towards your goal
-Adjust your understanding based on what you learned
-Repeat
-
-When faced with two or more alternatives that deliver roughly the same value, take the path that makes future change easier.
-```
+> 1. Find out where you are
+> 2. Take a small step towards your goal
+> 3. Adjust your understanding based on what you learned
+> 4. Repeat
+>
+> When faced with two or more alternatives that deliver roughly the same value, take the path that makes future change easier.
 
 That's it! It's as simple as developing a complex software system in a difficult business environment :) Hang tough though, have the courage to stick to the agile principals and let's all make software development a better place to live.
