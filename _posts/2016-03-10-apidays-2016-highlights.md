@@ -4,6 +4,7 @@ title: APIDays 2016 Highlights
 categories: [Conference]
 tags: [APIDays]
 date: 2016-03-10 12:40:00
+author: Gian Lorenzetto
 ---
 
 My notes and highlights from [APIDays](http://au.apidays.io) 2016 in Melbourne.

@@ -4,6 +4,7 @@ title: YOW! 2015 Highlights
 categories: [Conference]
 tags: [YOW]
 date: 2016-03-03 15:00:00
+author: Gian Lorenzetto
 ---
 
 Some highlights and a short summary from my attendance at [YOW!](http://yowconference.com.au) 2015. All the presentations are online at the [YOW! Australia](https://www.youtube.com/user/YOWAustralia) YouTube channel.

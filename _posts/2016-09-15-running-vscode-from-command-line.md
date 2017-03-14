@@ -4,6 +4,7 @@ title: Running VS Code From the Command Line in Mac OS X
 categories: [development]
 tags: [vscode]
 date: 2016-09-15 15:22:00 +0800
+author: Gian Lorenzetto
 ---
 
 I'm in love with VS Code, I'll admit it. To make the joy complete, I wanted to fire it up from the command line ([iTerm](https://www.iterm2.com) 2 of course).

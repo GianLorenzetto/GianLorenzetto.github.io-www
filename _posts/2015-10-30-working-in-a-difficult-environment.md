@@ -4,6 +4,7 @@ title: Working in a Difficult Environment
 categories: [development,people]
 tags: []
 date: 2015-10-30
+author: Gian Lorenzetto
 ---
 
 ## Toxic Environments

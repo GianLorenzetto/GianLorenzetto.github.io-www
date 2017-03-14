@@ -4,6 +4,7 @@ title: WebAPI Wildcard In Route
 categories: [development]
 tags: [webapi]
 date: 2016-07-14 19:44:00 +0800
+author: Gian Lorenzetto
 ---
 
 I recently discovered that it's possible to include a wildcard (the `*` character) in a WebApi route. It looks something like:

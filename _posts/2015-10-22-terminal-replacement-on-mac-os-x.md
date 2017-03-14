@@ -4,7 +4,7 @@ title: Terminal replacement on Mac OS X
 categories: [development, tools, mac]
 tags: [terminal]
 date: 2015-10-22 00:00:00
-
+author: Gian Lorenzetto
 ---
 
 I've recently been playing around with different terminals and different sheels on my MBP.

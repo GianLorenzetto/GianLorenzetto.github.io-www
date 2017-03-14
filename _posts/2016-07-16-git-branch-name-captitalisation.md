@@ -4,7 +4,7 @@ title: Git Branch Name Capitalisation
 categories: [development]
 tags: [git]
 date: 2016-07-14 16:04:00 +0800
-
+author: Gian Lorenzetto
 ---
 
 I recently had an odd experience where Git was, seemingly randomly, changing the capitalisation of my branch names. This would happen when performing operations like changing branches and pushing branches.

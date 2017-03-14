@@ -4,7 +4,7 @@ title: Replacing the Windows console with Cmder
 categories: [development]
 tags: [terminal,windows]
 date: 2015-10-23 17:39:41
-
+author: Gian Lorenzetto
 ---
 
 In a previous post I talked about [terminal replacements for Mac OS X]({% post_url 2015-10-22-terminal-replacement-on-mac-os-x %}). Unfortunately, on Windows the choices are less numerous.

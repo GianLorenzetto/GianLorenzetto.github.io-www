@@ -3,7 +3,7 @@ layout: post
 title: Ordering posts with Jekyll
 categories: []
 tags: []
-
+author: Gian Lorenzetto
 ---
 
 After switching to [GitHub Pages](https://pages.github.com) and [Jekyll](https://jekyllrb.com) for my blog, I ran into a problem whereby posts created on the same day where being ordered alphabetically, not in the order they where created. If you're like me, you don't post several blogs a day, so not really a major issue.

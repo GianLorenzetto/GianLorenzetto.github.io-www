@@ -4,6 +4,7 @@ title: Moving to GitHub Pages
 categories: []
 tags: []
 date: 2015-10-23 15:38:09
+author: Gian Lorenzetto
 ---
 
 Having spent a few days with [GitHub Pages](https://pages.github.com), I thought I would post some learnings in the hope they might help someome else moving to GitHub for blogging. I had a few hiccups at the start, but overall I'm really happy with how it's turned out.

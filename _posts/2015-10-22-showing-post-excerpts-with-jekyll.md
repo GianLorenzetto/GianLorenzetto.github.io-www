@@ -4,7 +4,7 @@ title: Showing post excerpts with Jekyll
 categories: [www]
 tags: [jekyll]
 date: 2015-10-22 00:01:00
-
+author: Gian Lorenzetto
 ---
 
 I recently moved my blog to a [GitHub Pages](https://pages.github.com) site and based it on the nice [Hyde theme](https://github.com/poole/hyde) theme. One issue I had was that posts where not being truncated on the main index page. This is fine for shorter posts, but once you have a number of longer posts in the mix, scrolling down to find the next post is a real pain.
