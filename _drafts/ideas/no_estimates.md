@@ -1,6 +1,6 @@
-No Estimates
+Software Estimation and No Estimates
 
-Steve McConnell
+ Agile For Humans podcast [Software Estimation with Steve McConnell](http://ryanripley.com/afh-052-software-estimation-with-steve-mcconnell-podcast/)
 
 Estimation types - forecasting is what software dev employs, amount of future work (not judging he size of a crowd)
 
@@ -49,4 +49,4 @@ Something to look out for - the business looking for the "Nano Probablity Scehdu
 
 Using velocity to forecast the number of iterations, but at the same level of precision as your estimates. It's more than a month, less than 6 months.
 
-Forecasting by velocity is "Proxy based estimation" - how much variability in the things where counting (need a good number of these things to calibrate the estimation), the assumption is that the average in the future is the same as the average in the past.
+Forecasting by velocity is "Proxy based estimation" - how much variability in the things we're counting (need a good number of these things to calibrate the estimation), the assumption is that the average in the future is the same as the average in the past.
