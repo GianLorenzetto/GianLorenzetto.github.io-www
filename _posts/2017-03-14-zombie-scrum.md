@@ -1,6 +1,16 @@
+---
+layout: post
+title: Zombie Scrum and the agile mindset
+categories: [development]
+tags: [process, agile]
+date: 2017-03-154 11:08:00 +0800
+---
+
 One problem I have noticed several times now is that of Zombie Scrum, or Scrum-by-numbers. It's an issue where someone has implemented Scrum some time back, and the implementation has stagnated.
 
 Symptoms usually include the team doing all the ceremonies correctly, but not yielding the on-going benefits. A lot of practices (especially the daily Scrum) start to feel forced, or lose purpose.
+
+<!--more-->
 
 (Note, this isn't limited to Scrum, but Scrum is the one I'm most familiar with. It can happen with any process, and seems to only get worse the more prescriptive the process is, presumably because buy-in and engagement by the development team was less to begin with.)
 
@@ -11,7 +21,7 @@ Them: "Yes, we do Scrum"
 Me: "So what's your process look like?"
 Them: "Err, we do Scrum?"
 Me: "Ok, but what does your process look like day to day?"
-Them: "Oh, yes we do stand-ups too!"
+Them: "Oh, yeah, we do stand-ups too!"
 
 When people transition to Scrum, from something like waterfall, there are a lot of benefits you get immediately: iterative development, tighter feedback loops, increased communication, increased transparency. These are all good things. But old habits die hard, and after a time, it can become very mechanical, and you see the team stabilise and start to cruise again. There is no more improvement in the system. And of course they're doing retro's, right? Probably, but I have rarely seen real, measurable change come out of a retro. Not that retro's are bad, just that they are hard, and you need to be able to quantify whatever it is you're looking to improve to know you've improved it, and most teams aren't that advanced in their metrics (other than gross measures like a shift in velocity).
 
@@ -21,16 +31,19 @@ The other reason I think this happens is that three ideas have been conflated to
 
 The first category, processes and frameworks, are things like Scrum, which mandate certain activities and workflows. The second, practices and techniques, includes things like XP, refactoring, CI etc.
 
-By conflating these ideas, usually under the banner captial-A Agile, it's easy for a team to think they are going along great, being agile, when they are missing out on the big payoff: continuous improvement. Yes, they may be doing retro's. But if you consider Agile = Scrum, then you aren't going to see bigger gains after the initial shift. Examples here might include things like: trying mobbing, no estimates, speed pairing, variable length Sprints, and so on.
+By conflating these ideas, usually under the banner _capital-A_ Agile, it's easy for a team to think they are going along great, being agile, when they are missing out on the big payoff: continuous improvement. Yes, they may be doing retro's. But if you consider Agile = Scrum, then you aren't going to see bigger gains after the initial shift. Examples here might include things like: trying mobbing, no estimates, speed pairing, variable length Sprints, and so on.
 
-I started thinking about this after listening to an Agile For Humans podcast (great podcast), where Ron Quartel discussed how his team was using Scrum, but with no estimates and variable length iterations. They got tremendous benefits from it. He also made reference to discovering the opening statement of the manifesto:
+I started thinking about this after listening to an [Agile For Humans](http://ryanripley.com/agile-for-humans/) podcast (_great_ podcast), where [Ron Quartel discussed how his team was using Scrum, but with no estimates and variable length iterations](http://ryanripley.com/afh-031-natural-software-development-using-noestimates-and-variable-length-sprints-podcast/). As a team, it was working really well for them (and the idea of MVI or Minimum Viable Increment is _gold_), but the more interesting point is that they where _experimenting_ with their process. In fact, he made reference to discovering the opening statement of the manifesto:
 
 "We are *uncovering* better ways of developing
 software by doing it and helping others do it.
 Through this work we have come to value:"
 
-Now, I'm certain I've read that statement previously, but I too had never fully grasped the importance of the word *uncovering*. We should be constantly working towards new and better ways of working. Scrum is great, but so is Lean. You like no estimates? Do it. Let's look at the 12 principals from the manifesto (I've only grabbed a few, the full list is xxx here xxx):
+Now, I'm certain I've read that statement previously, but I too had never fully grasped the importance of the word *uncovering*. We should be constantly working towards new and better ways of working. Scrum is great, but so is Lean. You like no estimates? Do it. Just remember that agile is an empirical process (more below) you need to measure the outcomes and continuously work to improve. 
 
+Let's look at a couple of the 12 principals from the manifesto (the full list is [here](http://agilemanifesto.org/principles.html)):
+
+```
 Our highest priority is to satisfy the customer
 through early and continuous delivery
 of valuable software.
@@ -49,20 +62,21 @@ of work not done--is essential.
 
 The best architectures, requirements, and designs 
 emerge from self-organizing teams.
+```
 
-...
+You can see that following these principals is key to being agile and much more important than following a prescribed process. In fact, it says this right in the first value of the manifesto:
 
-You can see that following these principals is key to being agile and much more important than following a process. In fact, it says this right in the first value of the manifesto:
-
+```
 Individuals and interactions over *processes* and tools
+```
 
-I see the conflation of the ideas as a problem, because people are afraid to try something new, because it "isn't Scrum", or it "isn't Lean" or worse, we don't want to do a "hybrid". Who cares! Just be agile. And let's not forget the irony in not wanting to deviate from scrum when the PO doesn't sit with the team, isn't full time, there's no scrum master, the team isn't self selecting ...
+I see the conflation of the ideas as a problem, because people are afraid to try something new, because it "isn't Scrum", or it "isn't Lean" or worse, we don't want to do a "hybrid". Who cares! Just be agile. And let's not forget the irony in not wanting to deviate from scrum when; the PO doesn't sit with the team; the PO isn't full time; there's no scrum master; the team isn't self selecting ... need I go on?
 
 I believe the key is to simply embrace the agile mindset. Be courageous with your process, because if you follow the agile values and principals you can trust that the process will deliver a delightful experience for both your team and your customer.
 
 One cautionary note: agile is based on the empirical model for process control. That is, frequent _inspection and adaptation_ for processes that are imperfectly defined and generate _unpredictable and unrepeatable_ outputs. If you _are_ going to change your process, ensure you have the means to measure the resulting change in some meaningful way, that will allow you to determine if it was beneficial or not.
 
-Lastly, I wanted to quote a slide from Dave Thomas' "Agile is Dead" presentation (which is great if you haven't seen it). He boils the agile process down to the following:
+Lastly, I wanted to quote a slide from Dave Thomas' [Agile is Dead](https://www.youtube.com/watch?v=vqz8ND-N1hc) presentation (which is great if you haven't seen it). He boils the agile process down to the following:
 
 ```
 Find out where you are
