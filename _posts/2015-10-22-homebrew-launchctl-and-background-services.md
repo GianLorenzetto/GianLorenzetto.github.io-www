@@ -20,7 +20,7 @@ I installed `cntlm` on my MBP for a while as a proxy work-around on a client sit
 
     `$ brew services list`
 
-The output consists of the `Name Status User Plist` and it's the last of these that we're intersted in:
+The output consists of the `Name Status User Plist` and it's the last of these that we're interested in:
 
 <pre>
 Name  Status  User Plist
