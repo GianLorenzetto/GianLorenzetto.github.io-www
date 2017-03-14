@@ -1,0 +1,3 @@
+If you're using the the built in .Net Core DI with a custom IoC container (Autofac, StructureMap) and then want to use TestServer for API tests, then you will run into trouble.
+
+The path to customising the DI container is to return your own implementation of the IServiceProvider from the overloaded ConfgureServices method, on the Startup class. Unfortunately, this is not possible with TestServer as it does not support that overload.
