@@ -3,7 +3,7 @@ layout: post
 title: Zombie Scrum and the agile mindset
 categories: [development]
 tags: [process, agile]
-date: 2017-03-154 11:08:00 +0800
+date: 2017-03-14 11:08:00 +0800
 ---
 
 One problem I have noticed several times now is that of Zombie Scrum, or Scrum-by-numbers. It's an issue where someone has implemented Scrum some time back, and the implementation has stagnated.
